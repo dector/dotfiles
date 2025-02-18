@@ -1,0 +1,6 @@
+window-decoration = false
+gtk-titlebar = false
+
+font-family = "Monaspace Argon"
+cursor-style-blink = false
+
