@@ -1,6 +1,39 @@
+# GTK windows
 window-decoration = false
 gtk-titlebar = false
 
+# Terminal UI
 font-family = "Monaspace Argon"
 cursor-style-blink = false
 
+# Scrolling
+#  top/bottom
+keybind = ctrl+home=scroll_to_top
+keybind = ctrl+end=scroll_to_bottom
+#  few lines
+keybind = ctrl+page_down=scroll_page_lines:5
+keybind = ctrl+page_up=scroll_page_lines:-5
+#  full page
+keybind = ctrl+shift+page_down=scroll_page_down
+keybind = ctrl+shift+page_up=scroll_page_up
+
+# Tabs
+keybind = ctrl+k>t>n=new_tab
+keybind = ctrl+k>t>l=next_tab
+keybind = ctrl+k>t>h=previous_tab
+keybind = ctrl+k>t>w=close_tab
+
+# Splits
+keybind = ctrl+k>s>left=new_split:left
+keybind = ctrl+k>s>right=new_split:right
+keybind = ctrl+k>s>down=new_split:down
+keybind = ctrl+k>s>up=new_split:up
+
+keybind = ctrl+k>s>h=goto_split:left
+keybind = ctrl+k>s>l=goto_split:right
+keybind = ctrl+k>s>j=goto_split:down
+keybind = ctrl+k>s>k=goto_split:up
+
+# Clipboard
+keybind = ctrl+k>y=copy_to_clipboard
+keybind = ctrl+k>p=paste_from_clipboard
