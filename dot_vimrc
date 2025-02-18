@@ -1,0 +1,75 @@
+" Use `space` as a leader key
+let mapleader = " "
+
+" Reject vi compatibility, accept modernity
+set nocompatible
+
+" TAB = 4 spaces
+set tabstop=4
+" Insert spaces when TAB pressed
+set shiftwidth=4
+set expandtab
+
+" Show at least few lines around cursor
+set scrolloff=5
+
+" Show hybrid line numbers
+" (absolute for current line, relative for others)
+set nu rnu
+
+" Show statusbar always
+set laststatus=2
+set statusline=\ \ %{toupper(mode())}%=%f\ %l/%L\ %y\ \ 
+
+" Execute multicursor changes immediately
+set ttimeoutlen=2
+
+" Show visual limiters on 72,100,120 symbols
+set colorcolumn=72,100,120
+highlight ColorColumn ctermbg=lightgrey
+
+" Search: respect case only if it has uppercase letter
+set ignorecase 
+set smartcase
+
+" Search: use incremental mode: jump to the next value while typing
+set incsearch
+" Search: hightlight all search results
+set hlsearch
+
+" Enable syntax highlighting
+syntax on
+
+" Hide all highlights on ` h`
+nnoremap <leader>h :noh<CR>
+
+" Copy selection to system clipboard
+nmap YY "+y 
+vmap YY "+y 
+
+" Paste from system clipboard
+nmap PP "+p 
+
+" Use `U` for Redo action
+nnoremap U <C-R>
+
+" Center cursor on long jumps
+nnoremap <C-b> <C-b>zz
+nnoremap <C-f> <C-f>zz
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap <C-o> <C-o>zz
+
+" Jump 5 lines
+nmap J 5jzz
+nmap K 5kzz
+
+" Use Q for recording macros
+nnoremap Q q
+nnoremap q <Nop>
+
+" Enter empty line before or after current line 
+" issue: needs `uu` instead of `u`
+nmap <Enter> o<ESC>k
+nmap <S-Enter> O<ESC>j
+
