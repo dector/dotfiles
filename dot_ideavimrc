@@ -154,6 +154,7 @@ map <leader>rI <Action>(ImplementMethods)
 map <leader>rO <Action>(OverrideMethods)
 
 " Bookmarks
+map M :action ToggleBookmarkA<CR>
 map mA :action ToggleBookmarkA<CR>
 map ma :action GotoBookmarkA<CR>
 map mB :action ToggleBookmarkB<CR>
