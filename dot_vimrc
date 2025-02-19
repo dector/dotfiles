@@ -44,21 +44,25 @@ syntax on
 nnoremap <leader>h :noh<CR>
 
 " Copy selection to system clipboard
-nmap YY "+y 
-vmap YY "+y 
+nmap <leader><leader>yy "+yy
+nmap <leader><leader>Y "+Y
+vmap <leader><leader>y "+y
+vmap <leader><leader>Y "+Y
 
 " Paste from system clipboard
-nmap PP "+p 
+nmap <leader><leader>p "+p
+nmap <leader><leader>P "+P
 
 " Use `U` for Redo action
 nnoremap U <C-R>
 
 " Center cursor on long jumps
-nnoremap <C-b> <C-b>zz
-nnoremap <C-f> <C-f>zz
-nnoremap <C-d> <C-d>zz
-nnoremap <C-u> <C-u>zz
-nnoremap <C-o> <C-o>zz
+nmap <C-b> <C-b>zz
+nmap <C-f> <C-f>zz
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+nmap <C-o> <C-o>zz
+nmap <C-i> <C-i>zz
 
 " Jump 5 lines
 nmap J 5jzz
