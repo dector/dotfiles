@@ -68,6 +68,9 @@ nmap <C-i> <C-i>zz
 nmap J 5jzz
 nmap K 5kzz
 
+" One-shot command in insert mode
+inoremap <C-v> <C-o>
+
 " Use Q for recording macros
 nnoremap Q q
 nnoremap q <Nop>
