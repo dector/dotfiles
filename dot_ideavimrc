@@ -1,0 +1,142 @@
+source ~/.vimrc
+
+" Desaturate ideavim icon
+set ideastatusicon=gray
+
+" --- Plugins https://jb.gg/ideavim-plugins ---
+set nerdtree
+set surround
+set sneak " sadly not supporting Sneak_f/Sneak_t
+Plug 'machakann/vim-highlightedyank' " highlight copied text
+Plug 'tpope/vim-commentary'
+
+set which-key
+set timeoutlen=1000
+" make the popup appear much slower
+let g:WhichKey_DefaultDelay = 700
+" close the popup and don't process formerly typed keys
+let g:WhichKey_ProcessUnknownMappings = "false"
+
+" --- Key bindings ---
+
+" Edit ideavim config
+nnoremap <leader>'e :e ~/.ideavimrc<CR>
+nnoremap <leader>'r :source ~/.ideavimrc<CR>
+"nnoremap <leader>'a <Action>(VimFindActionIdAction)
+
+" Next error
+map <S-Space> <Action>(GotoNextError)
+
+" AceJump: Ctrl-j
+map <C-j> <Action>(AceAction)
+
+" Code navigation
+map gd <Action>(GotoDeclaration)
+"map gD <Action>(GotoDefinition)
+map gy <Action>(GotoTypeDeclaration)
+map gI <Action>(GotoImplementation)
+map cd <Action>(RenameElement) " change definition
+map gu <Action>(ShowUsages)
+map gU <Action>(FindUsages)
+map gs <Action>(FileStructurePopup) " goto symbol
+
+map g] <Action>(GotoNextError)
+map g[ <Action>(GotoPreviousError)
+map gh <Action>(ShowHoverInfo)
+map gH <Action>(QuickJavaDoc)
+map g. <Action>(ShowIntentionActions)
+
+nnoremap [m <Action>(MethodUp)
+nnoremap ]m <Action>(MethodDown)
+
+" Selection
+nnoremap ]x <Action>(EditorSelectWord)
+nnoremap [x <Action>(EditorUnSelectWord)
+
+" Easy visual indentation
+vnoremap < <gv
+vnoremap > >gv
+
+" Move statements
+map <C-S-j> <Action>(MoveStatementDown)
+map <C-S-k> <Action>(MoveStatementUp)
+
+" Popup navigation
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+
+" Command prompt
+nmap <leader>. <Action>(GotoAction)
+vmap <leader>. <Action>(GotoAction)
+
+" Close active tab
+map <leader>w <action>(CloseContent)
+
+" Tab navigation ` t`
+map <leader>tn :tabnext<CR>
+map <leader>tp :tabprev<CR>
+noremap <A-l> :tabnext<CR>
+noremap <A-h> :tabprev<CR>
+
+" Comment lines ` c`
+map <leader>c <action>(CommentByLineComment)
+
+" Open NERDTree (use q to exit)
+map <leader>x :NERDTreeToggle<CR>
+
+" Regions ` z`
+map <leader>zC :action CollapseAllRegions<CR>
+map <leader>zO :action ExpandAllRegions<CR>
+map <leader>zc :action CollapseRegion<CR>
+map <leader>zo :action ExpandRegion<CR>
+
+" Clipboard/Changes/Code ` c`
+map <leader>cp <Action>($Paste)
+map <leader>cP <Action>(PasteMultiple)
+map <leader>cy <Action>($Copy)
+"
+map <leader>ca <Action>(Annotate)
+map <leader>cu <Action>(Git.Fetch)
+map <leader>cU <Action>(Vcs.UpdateProject)
+map <leader>cb <Action>(Git.Branches)
+map <leader>ck <Action>(ActivateCommitToolWindow)
+map <leader>cK <Action>(Vcs.Push)
+"
+map <leader>cL <Action>(LocalHistory.PutLabel)
+map <leader>cl <Action>(LocalHistory.ShowProjectHistory)
+"
+map <leader>cf <action>(ReformatCode)
+map <leader>cF <action>(ShowReformatFileDialog)
+map <leader>cI <action>(OptimizeImports)
+
+" View splits ` v`
+map <leader>vv <Action>(SplitVertically)
+map <leader>vh <Action>(SplitHorizontally)
+map <leader>vu <Action>(Unsplit)
+map <leader>vm <Action>(MoveEditorToOppositeTabGroup)
+
+" Display options ` d`
+map <leader>df <action>(SelectInProjectView)
+
+" Find ` f`
+map <leader>fe <action>(SearchEverywhere)
+map <leader>fc <action>(GotoClass)
+map <leader>ff <action>(GotoFile)
+map <leader>fs <action>(GotoSymbol)
+map <leader>fa <action>(GotoAction)
+"
+map <leader>fr <action>(RecentFiles)
+map <leader>fl <action>(RecentLocations)
+
+" Open ` o`
+map <leader>os <action>(NewScratchFile)
+
+" Refactoring ` r`
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+map <leader>rI <Action>(ImplementMethods)
+map <leader>rO <Action>(OverrideMethods)
