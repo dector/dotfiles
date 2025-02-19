@@ -77,10 +77,8 @@ map <leader>w <action>(CloseContent)
 " Tab navigation ` t`
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabprev<CR>
-noremap <C-,> :tabprev<CR>
-noremap <C-.> :tabnext<CR>
-inoremap <C-,> <Esc>:tabprev<CR>
-inoremap <C-.> <Esc>:tabnext<CR>
+noremap <S-h> :tabprev<CR>
+noremap <S-l> :tabnext<CR>
 
 " Comment lines ` c`
 map <leader>c <action>(CommentByLineComment)
