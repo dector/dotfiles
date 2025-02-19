@@ -10,6 +10,9 @@ alias gs 'git status'
 alias j jj
 alias jl 'jj log --reversed'
 
+# Misc
+alias cz chezmoi
+
 # Clipboard
 alias clp 'xclip -sel c'
 
