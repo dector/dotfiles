@@ -35,17 +35,19 @@ map gd <Action>(GotoDeclaration)
 "map gD <Action>(GotoDefinition)
 map gy <Action>(GotoTypeDeclaration)
 map gI <Action>(GotoImplementation)
-map cd <Action>(RenameElement) " change definition
+" change definition
+map cd <Action>(RenameElement)
 map gu <Action>(ShowUsages)
 map gU <Action>(FindUsages)
-map gs <Action>(FileStructurePopup) " goto symbol
-
+" goto symbol
+map gs <Action>(FileStructurePopup)
+"
 map g] <Action>(GotoNextError)
 map g[ <Action>(GotoPreviousError)
 map gh <Action>(ShowHoverInfo)
 map gH <Action>(QuickJavaDoc)
 map g. <Action>(ShowIntentionActions)
-
+"
 nnoremap [m <Action>(MethodUp)
 nnoremap ]m <Action>(MethodDown)
 
@@ -65,9 +67,9 @@ map <C-S-k> <Action>(MoveStatementUp)
 inoremap <C-j> <Action>(PopupMenu-selectNext)
 inoremap <C-k> <Action>(PopupMenu-selectPrev)
 
-" Command prompt
-nmap <leader>. <Action>(GotoAction)
-vmap <leader>. <Action>(GotoAction)
+" Switcher
+"map <S-<Tab>> <Action>(Switcher)
+map <leader>gg <Action>(Switcher)
 
 " Close active tab
 map <leader>w <action>(CloseContent)
@@ -75,8 +77,10 @@ map <leader>w <action>(CloseContent)
 " Tab navigation ` t`
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabprev<CR>
-noremap <A-l> :tabnext<CR>
-noremap <A-h> :tabprev<CR>
+noremap <C-,> :tabprev<CR>
+noremap <C-.> :tabnext<CR>
+inoremap <C-,> <Esc>:tabprev<CR>
+inoremap <C-.> <Esc>:tabnext<CR>
 
 " Comment lines ` c`
 map <leader>c <action>(CommentByLineComment)
@@ -102,9 +106,12 @@ map <leader>cb <Action>(Git.Branches)
 map <leader>ck <Action>(ActivateCommitToolWindow)
 map <leader>cK <Action>(Vcs.Push)
 "
-map <leader>cL <Action>(LocalHistory.PutLabel)
-map <leader>cl <Action>(LocalHistory.ShowProjectHistory)
-"
+map <leader>cl <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>cL <Action>(Vcs.Show.Log)
+map <leader>ch <Action>(Vcs.ShowHistoryForBlock)
+map <leader>cH <Action>(LocalHistory.ShowProjectHistory)
+map <leader>cm <Action>(LocalHistory.PutLabel)
+
 map <leader>cf <action>(ReformatCode)
 map <leader>cF <action>(ShowReformatFileDialog)
 map <leader>cI <action>(OptimizeImports)
@@ -117,6 +124,7 @@ map <leader>vm <Action>(MoveEditorToOppositeTabGroup)
 
 " Display options ` d`
 map <leader>df <action>(SelectInProjectView)
+map <leader>dw <action>(EditorToggleUseSoftWraps)
 
 " Find ` f`
 map <leader>fe <action>(SearchEverywhere)
@@ -140,3 +148,57 @@ map <leader>rs <Action>(ChangeSignature)
 map <leader>rr <Action>(Refactorings.QuickListPopupAction)
 map <leader>rI <Action>(ImplementMethods)
 map <leader>rO <Action>(OverrideMethods)
+
+" Bookmarks
+map ma :action ToggleBookmarkA<CR>
+map mA :action GotoBookmarkA<CR>
+map mb :action ToggleBookmarkB<CR>
+map mB :action GotoBookmarkB<CR>
+map mc :action ToggleBookmarkC<CR>
+map mC :action GotoBookmarkC<CR>
+map md :action ToggleBookmarkD<CR>
+map mD :action GotoBookmarkD<CR>
+map me :action ToggleBookmarkE<CR>
+map mE :action GotoBookmarkE<CR>
+map mf :action ToggleBookmarkF<CR>
+map mF :action GotoBookmarkF<CR>
+map mg :action ToggleBookmarkG<CR>
+map mG :action GotoBookmarkG<CR>
+map mh :action ToggleBookmarkH<CR>
+map mH :action GotoBookmarkH<CR>
+map mi :action ToggleBookmarkI<CR>
+map mI :action GotoBookmarkI<CR>
+map mj :action ToggleBookmarkJ<CR>
+map mJ :action GotoBookmarkJ<CR>
+map mk :action ToggleBookmarkK<CR>
+map mK :action GotoBookmarkK<CR>
+map ml :action ToggleBookmarkL<CR>
+map mL :action GotoBookmarkL<CR>
+map mm :action ToggleBookmarkM<CR>
+map mM :action GotoBookmarkM<CR>
+map mn :action ToggleBookmarkN<CR>
+map mN :action GotoBookmarkN<CR>
+map mo :action ToggleBookmarkO<CR>
+map mO :action GotoBookmarkO<CR>
+map mp :action ToggleBookmarkP<CR>
+map mP :action GotoBookmarkP<CR>
+map mq :action ToggleBookmarkQ<CR>
+map mQ :action GotoBookmarkQ<CR>
+map mr :action ToggleBookmarkR<CR>
+map mR :action GotoBookmarkR<CR>
+map ms :action ToggleBookmarkS<CR>
+map mS :action GotoBookmarkS<CR>
+map mt :action ToggleBookmarkT<CR>
+map mT :action GotoBookmarkT<CR>
+map mu :action ToggleBookmarkU<CR>
+map mU :action GotoBookmarkU<CR>
+map mv :action ToggleBookmarkV<CR>
+map mV :action GotoBookmarkV<CR>
+map mw :action ToggleBookmarkW<CR>
+map mW :action GotoBookmarkW<CR>
+map mx :action ToggleBookmarkX<CR>
+map mX :action GotoBookmarkX<CR>
+map my :action ToggleBookmarkY<CR>
+map mY :action GotoBookmarkY<CR>
+map mz :action ToggleBookmarkZ<CR>
+map mZ :action GotoBookmarkZ<CR>
