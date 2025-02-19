@@ -84,7 +84,7 @@ noremap <S-l> :tabnext<CR>
 map <leader>c <action>(CommentByLineComment)
 
 " Open NERDTree (use q to exit)
-map <leader>x :NERDTreeToggle<CR>
+map <leader>q :NERDTreeToggle<CR>
 
 " Regions ` z`
 map <leader>zC :action CollapseAllRegions<CR>
@@ -119,10 +119,16 @@ map <leader>vv <Action>(SplitVertically)
 map <leader>vh <Action>(SplitHorizontally)
 map <leader>vu <Action>(Unsplit)
 map <leader>vm <Action>(MoveEditorToOppositeTabGroup)
+map <leader>vb <Action>(ShowBookmarks)
 
 " Display options ` d`
 map <leader>df <action>(SelectInProjectView)
 map <leader>dw <action>(EditorToggleUseSoftWraps)
+
+" MultiHighlight (requires plugin)
+nmap <leader>dhh <action>(MultiHighlight)
+nmap <leader>dhk <action>(MultiHighlightWithColor)
+nmap <leader>dhc <action>(MultiHighlight.ClearAction)
 
 " Find ` f`
 map <leader>fe <action>(SearchEverywhere)
@@ -148,55 +154,55 @@ map <leader>rI <Action>(ImplementMethods)
 map <leader>rO <Action>(OverrideMethods)
 
 " Bookmarks
-map ma :action ToggleBookmarkA<CR>
-map mA :action GotoBookmarkA<CR>
-map mb :action ToggleBookmarkB<CR>
-map mB :action GotoBookmarkB<CR>
-map mc :action ToggleBookmarkC<CR>
-map mC :action GotoBookmarkC<CR>
-map md :action ToggleBookmarkD<CR>
-map mD :action GotoBookmarkD<CR>
-map me :action ToggleBookmarkE<CR>
-map mE :action GotoBookmarkE<CR>
-map mf :action ToggleBookmarkF<CR>
-map mF :action GotoBookmarkF<CR>
-map mg :action ToggleBookmarkG<CR>
-map mG :action GotoBookmarkG<CR>
-map mh :action ToggleBookmarkH<CR>
-map mH :action GotoBookmarkH<CR>
-map mi :action ToggleBookmarkI<CR>
-map mI :action GotoBookmarkI<CR>
-map mj :action ToggleBookmarkJ<CR>
-map mJ :action GotoBookmarkJ<CR>
-map mk :action ToggleBookmarkK<CR>
-map mK :action GotoBookmarkK<CR>
-map ml :action ToggleBookmarkL<CR>
-map mL :action GotoBookmarkL<CR>
-map mm :action ToggleBookmarkM<CR>
-map mM :action GotoBookmarkM<CR>
-map mn :action ToggleBookmarkN<CR>
-map mN :action GotoBookmarkN<CR>
-map mo :action ToggleBookmarkO<CR>
-map mO :action GotoBookmarkO<CR>
-map mp :action ToggleBookmarkP<CR>
-map mP :action GotoBookmarkP<CR>
-map mq :action ToggleBookmarkQ<CR>
-map mQ :action GotoBookmarkQ<CR>
-map mr :action ToggleBookmarkR<CR>
-map mR :action GotoBookmarkR<CR>
-map ms :action ToggleBookmarkS<CR>
-map mS :action GotoBookmarkS<CR>
-map mt :action ToggleBookmarkT<CR>
-map mT :action GotoBookmarkT<CR>
-map mu :action ToggleBookmarkU<CR>
-map mU :action GotoBookmarkU<CR>
-map mv :action ToggleBookmarkV<CR>
-map mV :action GotoBookmarkV<CR>
-map mw :action ToggleBookmarkW<CR>
-map mW :action GotoBookmarkW<CR>
-map mx :action ToggleBookmarkX<CR>
-map mX :action GotoBookmarkX<CR>
-map my :action ToggleBookmarkY<CR>
-map mY :action GotoBookmarkY<CR>
-map mz :action ToggleBookmarkZ<CR>
-map mZ :action GotoBookmarkZ<CR>
+map mA :action ToggleBookmarkA<CR>
+map ma :action GotoBookmarkA<CR>
+map mB :action ToggleBookmarkB<CR>
+map mb :action GotoBookmarkB<CR>
+map mC :action ToggleBookmarkC<CR>
+map mc :action GotoBookmarkC<CR>
+map mD :action ToggleBookmarkD<CR>
+map md :action GotoBookmarkD<CR>
+map mE :action ToggleBookmarkE<CR>
+map me :action GotoBookmarkE<CR>
+map mF :action ToggleBookmarkF<CR>
+map mf :action GotoBookmarkF<CR>
+map mG :action ToggleBookmarkG<CR>
+map mg :action GotoBookmarkG<CR>
+map mH :action ToggleBookmarkH<CR>
+map mh :action GotoBookmarkH<CR>
+map mI :action ToggleBookmarkI<CR>
+map mi :action GotoBookmarkI<CR>
+map mJ :action ToggleBookmarkJ<CR>
+map mj :action GotoBookmarkJ<CR>
+map mK :action ToggleBookmarkK<CR>
+map mk :action GotoBookmarkK<CR>
+map mL :action ToggleBookmarkL<CR>
+map ml :action GotoBookmarkL<CR>
+map mM :action ToggleBookmarkM<CR>
+map mm :action GotoBookmarkM<CR>
+map mN :action ToggleBookmarkN<CR>
+map mn :action GotoBookmarkN<CR>
+map mO :action ToggleBookmarkO<CR>
+map mo :action GotoBookmarkO<CR>
+map mP :action ToggleBookmarkP<CR>
+map mp :action GotoBookmarkP<CR>
+map mQ :action ToggleBookmarkQ<CR>
+map mq :action GotoBookmarkQ<CR>
+map mR :action ToggleBookmarkR<CR>
+map mr :action GotoBookmarkR<CR>
+map mS :action ToggleBookmarkS<CR>
+map ms :action GotoBookmarkS<CR>
+map mT :action ToggleBookmarkT<CR>
+map mt :action GotoBookmarkT<CR>
+map mU :action ToggleBookmarkU<CR>
+map mu :action GotoBookmarkU<CR>
+map mV :action ToggleBookmarkV<CR>
+map mv :action GotoBookmarkV<CR>
+map mW :action ToggleBookmarkW<CR>
+map mw :action GotoBookmarkW<CR>
+map mX :action ToggleBookmarkX<CR>
+map mx :action GotoBookmarkX<CR>
+map mY :action ToggleBookmarkY<CR>
+map my :action GotoBookmarkY<CR>
+map mZ :action ToggleBookmarkZ<CR>
+map mz :action GotoBookmarkZ<CR>
