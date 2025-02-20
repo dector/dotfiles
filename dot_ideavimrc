@@ -119,6 +119,7 @@ map <leader>cb <Action>(Git.Branches)
 map <leader>ck <Action>(ActivateCommitToolWindow)
 map <leader>cK <Action>(Vcs.Push)
 "
+map <leader>cq <Action>(Vcs.QuickListPopupAction)
 map <leader>cl <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>cL <Action>(Vcs.Show.Log)
 map <leader>ch <Action>(Vcs.ShowHistoryForBlock)
