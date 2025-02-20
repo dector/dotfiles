@@ -34,14 +34,14 @@ set smartcase
 
 " Search: use incremental mode: jump to the next value while typing
 set incsearch
-" Search: hightlight all search results
+" Search: highlight all search results
 set hlsearch
 
 " Enable syntax highlighting
 syntax on
 
-" Hide all highlights on ` h`
-nnoremap <leader>h :noh<CR>
+" Hide all highlights on ` hh`
+nnoremap <leader>hh :noh<CR>
 
 " Copy selection to system clipboard
 nmap <leader><leader>yy "+yy
@@ -69,7 +69,7 @@ nmap J 5jzz
 nmap K 5kzz
 
 " One-shot command in insert mode
-inoremap <C-v> <C-o>
+"inoremap <C-v> <C-o>
 
 " Use Q for recording macros
 nnoremap Q q
