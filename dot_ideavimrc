@@ -36,9 +36,10 @@ map gd <Action>(GotoDeclaration)
 map gy <Action>(GotoTypeDeclaration)
 map gI <Action>(GotoImplementation)
 " change definition
-map cd <Action>(RenameElement)
+"map cd <Action>(RenameElement)
 map gu <Action>(ShowUsages)
 map gU <Action>(FindUsages)
+map gp <Action>(FindUsages)
 " goto symbol
 map gs <Action>(FileStructurePopup)
 "
@@ -50,6 +51,8 @@ map g. <Action>(ShowIntentionActions)
 "
 nmap [m <Action>(MethodUp)
 nmap ]m <Action>(MethodDown)
+nmap ]c <Action>(VcsShowNextChangeMarker)
+nmap [c <Action>(VcsShowPrevChangeMarker)
 
 " Selection
 nmap ]x <Action>(EditorSelectWord)
@@ -81,22 +84,28 @@ map <leader>gg <Action>(Switcher)
 map <leader>w <action>(CloseContent)
 
 " Tab navigation ` t`
-map <leader>tn :tabnext<CR>
-map <leader>tp :tabprev<CR>
 noremap <S-h> :tabprev<CR>
 noremap <S-l> :tabnext<CR>
+map <leader>tn :tabnext<CR>
+map <leader>tp :tabprev<CR>
+map <leader>tu <Action>(ReopenClosedTab)
+map <leader>tc <Action>(CloseAllUnmodifiedEditors)
+map <leader>tC <Action>(CloseAllEditorsButActive)
 
 " Comment lines ` c`
-map <leader>c <action>(CommentByLineComment)
+"map <leader>c <action>(CommentByLineComment)
+" using `Ctrl+/`
 
 " Open NERDTree (use q to exit)
-map <leader>q :NERDTreeToggle<CR>
+map <leader>q :NERDTreeFocus<CR>
 
 " Regions ` z`
 map <leader>zC :action CollapseAllRegions<CR>
-map <leader>zO :action ExpandAllRegions<CR>
+map <leader>zX :action ExpandAllRegions<CR>
 map <leader>zc :action CollapseRegion<CR>
-map <leader>zo :action ExpandRegion<CR>
+map <leader>zx :action ExpandRegion<CR>
+map <leader>zu :action EditorIncreaseFontSizeGlobal<CR>
+map <leader>zd :action EditorDecreaseFontSizeGlobal<CR>
 
 " Clipboard/Changes/Code ` c`
 map <leader>cp <Action>($Paste)
@@ -120,21 +129,29 @@ map <leader>cf <action>(ReformatCode)
 map <leader>cF <action>(ShowReformatFileDialog)
 map <leader>cI <action>(OptimizeImports)
 
-" View splits ` v`
-map <leader>vv <Action>(SplitVertically)
-map <leader>vh <Action>(SplitHorizontally)
-map <leader>vu <Action>(Unsplit)
-map <leader>vm <Action>(MoveEditorToOppositeTabGroup)
-map <leader>vb <Action>(ShowBookmarks)
+" Split ` s`
+map <leader>sr <Action>(MoveTabRight)
+map <leader>sR <Action>(SplitVertically)
+map <leader>sd <Action>(MoveTabDown)
+map <leader>sD <Action>(SplitHorizontally)
+map <leader>su <Action>(Unsplit)
+map <leader>so <Action>(ChangeSplitOrientation)
+map <leader>sm <Action>(MoveEditorToOppositeTabGroup)
+map <leader>sn <Action>(NextSplitter)
+map <leader>sp <Action>(PrevSplitter)
 
-" Display options ` d`
-map <leader>df <action>(SelectInProjectView)
-map <leader>dw <action>(EditorToggleUseSoftWraps)
+" View ... ` v`
+map <leader>vb <Action>(ShowBookmarks)
+map <leader>vd <Action>(QuickImplementations)
+map <leader>vp <Action>(ParameterInfo)
+map <leader>vy <Action>(ExpressionTypeInfo)
+map <leader>vw <action>(EditorToggleUseSoftWraps)
+map <leader>vv zz
 
 " MultiHighlight (requires plugin)
-nmap <leader>dhh <action>(MultiHighlight)
-nmap <leader>dhk <action>(MultiHighlightWithColor)
-nmap <leader>dhc <action>(MultiHighlight.ClearAction)
+nmap <leader>hw <action>(MultiHighlight)<Esc>
+nmap <leader>hc <action>(MultiHighlightWithColor)
+nmap <leader>hd <action>(MultiHighlight.ClearAction)
 
 " Find ` f`
 map <leader>fe <action>(SearchEverywhere)
@@ -142,6 +159,7 @@ map <leader>fc <action>(GotoClass)
 map <leader>ff <action>(GotoFile)
 map <leader>fs <action>(GotoSymbol)
 map <leader>fa <action>(GotoAction)
+map <leader>fq <action>(SelectInProjectView)
 "
 map <leader>fr <action>(RecentFiles)
 map <leader>fl <action>(RecentLocations)
