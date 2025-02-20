@@ -19,6 +19,11 @@ let g:WhichKey_ProcessUnknownMappings = "false"
 
 " --- Key bindings ---
 
+" Better undo/redo
+map u <Action>($Undo)
+map <C-r> <Action>($Redo)
+map U <Action>($Redo)
+
 " Edit ideavim config
 nnoremap <leader>'e :e ~/.ideavimrc<CR>
 nnoremap <leader>'r :source ~/.ideavimrc<CR>
