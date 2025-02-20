@@ -52,7 +52,7 @@ map g] <Action>(GotoNextError)
 map g[ <Action>(GotoPreviousError)
 map gh <Action>(ShowHoverInfo)
 map gH <Action>(QuickJavaDoc)
-map g. <Action>(ShowIntentionActions)
+map g, <Action>(ShowIntentionActions)
 "
 nmap [m <Action>(MethodUp)
 nmap ]m <Action>(MethodDown)
