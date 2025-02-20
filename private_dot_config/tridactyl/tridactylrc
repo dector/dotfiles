@@ -93,6 +93,8 @@ bind zd zoom -0.1 true
 bind zI zoom 0.5 true
 bind zD zoom -0.5 true
 
+bind <C-t> tabopen
+
 " Extras (duplicated)
 bind ;; hint -;
 bind ;j hint
