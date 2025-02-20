@@ -1,4 +1,7 @@
 set smoothscroll true
+set hintchars asdfjkl;wertyuioghxcvbnm,.
+
+unbind d
 
 bind j scrollline 10
 bind k scrollline -10
@@ -29,7 +32,8 @@ bind gH home
 bind B bmark
 bind b current_url bmark
 
-bind f hint
+"bind f hint
+bind f hint -JW open
 bind F hint -b
 bind T hint -t
 
@@ -39,12 +43,18 @@ bind ga tabaudio
 bind gr js tri.browserBg.tabs.query({currentWindow: true}).then(tabs => tri.browserBg.tabs.update(tabs[Math.floor(Math.random() * tabs.length)].id, { active: true }))
 bind gu urlparent
 bind gU ulrroot
+bind v hint -h
 bind ;b hint -b
+bind ;B hint -qb
 bind ;t hint -W tabopen
+bind ;T hint -qW tabopen
 bind ;i hint -i
 bind ;I hint -I
 bind ;S hint -S
 bind ;W hint -w
+bind ;x hint -K
+bind ;X hint -k
+bind ;y hint -y
 
 bind R reload
 unbind t
@@ -59,10 +69,14 @@ bind <S-Insert> mode ignore
 
 bind <C-o> jumpprev
 bind <C-i> jumpnext
-bind << tabmove -1
-bind >> tabmove 1
-bind <C-K> tabmove -10
-bind <C-J> tabmove 10
+unbind M
+unbind m
+bind mj tabmove +1
+bind mk tabmove -1
+"bind mJ tabmove +10
+"bind mK tabmove -10
+bind mF tabmove start
+bind mL tabmove end
 
 bind o fillcmdline open
 bind O current_url open
@@ -80,6 +94,7 @@ bind zI zoom 0.5 true
 bind zD zoom -0.5 true
 
 " Extras (duplicated)
+bind ;; hint -;
 bind ;j hint
 bind ;o hint -b
 bind ;p hint -W tabopen
