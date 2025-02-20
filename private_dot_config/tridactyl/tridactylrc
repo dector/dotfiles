@@ -36,7 +36,7 @@ bind T hint -t
 bind gi focusinput -l
 bind gI focusinput -n
 bind ga tabaudio
-bind gr jsb browser.tabs.query({}).then(tabs => browser.tabs.update(tabs[Math.floor(Math.random() * tabs.length)].id, { active: true }))
+bind gr js tri.browserBg.tabs.query({currentWindow: true}).then(tabs => tri.browserBg.tabs.update(tabs[Math.floor(Math.random() * tabs.length)].id, { active: true }))
 bind gu urlparent
 bind gU ulrroot
 bind ;b hint -b
