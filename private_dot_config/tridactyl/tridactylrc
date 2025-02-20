@@ -5,8 +5,12 @@ unbind d
 
 bind j scrollline 10
 bind k scrollline -10
-bind h scrollpx -50
-bind l scrollpx 50
+bind l scrollline 30
+bind h scrollline -30
+bind <A-j> scrollline 2
+bind <A-k> scrollline -2
+bind <A-h> scrollpx -50
+bind <A-l> scrollpx 50
 bind gg scrollto 0
 bind G scrollto 100
 bind <C-d> scrollpage 0.5
