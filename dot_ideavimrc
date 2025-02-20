@@ -183,6 +183,12 @@ map <leader>rr <Action>(Refactorings.QuickListPopupAction)
 map <leader>rI <Action>(ImplementMethods)
 map <leader>rO <Action>(OverrideMethods)
 
+" Actions
+map <leader>aa <Action>(android.deploy.CodeSwap)
+map <leader>aA <Action>(android.deploy.ApplyChanges)
+map <leader>ar <Action>(Run)
+map <leader>aR <Action>(ChooseRunConfiguration)
+
 " Bookmarks
 map M :action ToggleBookmarkA<CR>
 map mA :action ToggleBookmarkA<CR>
