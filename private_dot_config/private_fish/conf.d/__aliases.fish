@@ -1,3 +1,5 @@
+alias :q exit
+
 # Remove to trash
 alias rm trash
 alias rm-hard /usr/bin/rm
