@@ -48,12 +48,18 @@ map gh <Action>(ShowHoverInfo)
 map gH <Action>(QuickJavaDoc)
 map g. <Action>(ShowIntentionActions)
 "
-nnoremap [m <Action>(MethodUp)
-nnoremap ]m <Action>(MethodDown)
+nmap [m <Action>(MethodUp)
+nmap ]m <Action>(MethodDown)
 
 " Selection
-nnoremap ]x <Action>(EditorSelectWord)
-nnoremap [x <Action>(EditorUnSelectWord)
+nmap ]x <Action>(EditorSelectWord)
+nmap [x <Action>(EditorUnSelectWord)
+vmap ]x <Action>(EditorSelectWord)
+vmap [x <Action>(EditorUnSelectWord)
+nmap <C-S-]> <Action>(EditorSelectWord)
+nmap <C-S-[> <Action>(EditorUnSelectWord)
+vmap <C-S-]> <Action>(EditorSelectWord)
+vmap <C-S-[> <Action>(EditorUnSelectWord)
 
 " Easy visual indentation
 vnoremap < <gv
