@@ -1,0 +1,96 @@
+set smoothscroll true
+
+bind j scrollline 10
+bind k scrollline -10
+bind h scrollpx -50
+bind l scrollpx 50
+bind gg scrollto 0
+bind G scrollto 100
+bind <C-d> scrollpage 0.5
+bind <C-u> scrollpage -0.5
+bind <C-f> scrollpage 1
+bind <C-b> scrollpage -1
+bind w tabclose
+bind u undo
+bind U undo window
+
+" Tabs navigation
+bind J tabnext
+bind K tabprev
+bind ) tabnext
+bind ( tabprev
+bind H back
+bind L forward
+bind gl tablast
+bind gf tabfirst
+bind gh tabopen --focus-address-bar
+bind gH home
+
+bind B bmark
+bind b current_url bmark
+
+bind f hint
+bind F hint -b
+bind T hint -t
+
+bind gi focusinput -l
+bind gI focusinput -n
+bind ga tabaudio
+bind gr jsb browser.tabs.query({}).then(tabs => browser.tabs.update(tabs[Math.floor(Math.random() * tabs.length)].id, { active: true }))
+bind gu urlparent
+bind gU ulrroot
+bind ;b hint -b
+bind ;t hint -W tabopen
+bind ;i hint -i
+bind ;I hint -I
+bind ;S hint -S
+bind ;W hint -w
+
+bind R reload
+unbind t
+bind tm mute toggle
+bind tt fillcmdline tab
+bind x stop
+
+bind <C-v> nmode ignore 1 mode normal
+bind <Escape> composite mode normal ; hidecmdline
+bind <S-Escape> mode ignore
+bind <S-Insert> mode ignore
+
+bind <C-o> jumpprev
+bind <C-i> jumpnext
+bind << tabmove -1
+bind >> tabmove 1
+bind <C-K> tabmove -10
+bind <C-J> tabmove 10
+
+bind o fillcmdline open
+bind O current_url open
+bind W current_url winopen
+bind yy clipboard yank
+bind yt clipboard yanktitle
+bind ym clipboard yankmd
+bind yq text2qr
+bind . repeat
+
+bind zz zoom 1
+bind zi zoom 0.1 true
+bind zd zoom -0.1 true
+bind zI zoom 0.5 true
+bind zD zoom -0.5 true
+
+" Extras (duplicated)
+bind ;j hint
+bind ;o hint -b
+bind ;p hint -W tabopen
+bind } scrollpage 0.5
+bind { scrollpage -0.5
+bind ;- tabclose
+bind ;' undo
+bind ;, back
+bind ;. forward
+bind ;& current_url bmark
+bind ;{ focusinput -l
+bind ;} focusinput -n
+bind ;/ reload
+
