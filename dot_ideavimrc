@@ -50,6 +50,7 @@ map gs <Action>(FileStructurePopup)
 "
 map g] <Action>(GotoNextError)
 map g[ <Action>(GotoPreviousError)
+map gf <Action>(ReformatCode)
 map gh <Action>(ShowHoverInfo)
 map gH <Action>(QuickJavaDoc)
 map gm <Action>(ShowIntentionActions)
@@ -126,6 +127,7 @@ map <leader>cb <Action>(Git.Branches)
 map <leader>ck <Action>(ActivateCommitToolWindow)
 map <leader>cK <Action>(Vcs.Push)
 "
+map <leader>cc <Action>(VcsShowCurrentChangeMarker)
 map <leader>cq <Action>(Vcs.QuickListPopupAction)
 map <leader>cl <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>cL <Action>(Vcs.Show.Log)
@@ -161,6 +163,8 @@ nmap <leader>hw <action>(MultiHighlight)<Esc>
 nmap <leader>hc <action>(MultiHighlightWithColor)
 nmap <leader>hd <action>(MultiHighlight.ClearAction)
 
+nmap <leader>hu <action>(HighlightUsagesInFile)
+
 " Find ` f`
 map <leader>fe <action>(SearchEverywhere)
 map <leader>fc <action>(GotoClass)
@@ -174,6 +178,7 @@ map <leader>fl <action>(RecentLocations)
 
 " Open ` o`
 map <leader>ob <action>(ActivateBuildToolWindow)
+map <leader>oB <action>(ActivateBookmarksToolWindow)
 map <leader>od <action>(ActivateRunningDevicesToolWindow)
 map <leader>oD <action>(ActivateDebugToolWindow)
 map <leader>oi <action>(ActivateInspectionToolWindow)
@@ -211,7 +216,7 @@ map <leader>ar <Action>(Run)
 map <leader>aR <Action>(ChooseRunConfiguration)
 
 " Bookmarks
-map M :action ToggleBookmarkA<CR>
+map <S-m> :action ToggleBookmark<CR>
 map mA :action ToggleBookmarkA<CR>
 map ma :action GotoBookmarkA<CR>
 map mB :action ToggleBookmarkB<CR>
