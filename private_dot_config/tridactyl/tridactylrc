@@ -1,8 +1,6 @@
 colors --url https://raw.githubusercontent.com/eeshugerman/shydactyl-variations/master/dist/shydactyl-dark.css shydactyl-dark
 colourscheme shydactyl-dark
 
-
-
 set smoothscroll true
 set hintchars asdfjkl;wertyuioghxcvbnm,.
 
@@ -51,7 +49,7 @@ bind gI focusinput -n
 bind ga tabaudio
 bind gr js tri.browserBg.tabs.query({currentWindow: true}).then(tabs => tri.browserBg.tabs.update(tabs[Math.floor(Math.random() * tabs.length)].id, { active: true }))
 bind gu urlparent
-bind gU ulrroot
+bind gU urlroot
 bind v hint -h
 bind ;b hint -b
 bind ;B hint -qb
