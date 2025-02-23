@@ -67,6 +67,8 @@ nmap <C-i> <C-i>zz
 " Jump 5 lines
 nmap J 5jzz
 nmap K 5kzz
+vmap J 5jzz
+vmap K 5kzz
 
 " One-shot command in insert mode
 "inoremap <C-v> <C-o>
