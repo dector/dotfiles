@@ -11,11 +11,11 @@ cursor-style-blink = false
 keybind = ctrl+home=scroll_to_top
 keybind = ctrl+end=scroll_to_bottom
 #  few lines
-keybind = ctrl+page_down=scroll_page_lines:5
-keybind = ctrl+page_up=scroll_page_lines:-5
+keybind = ctrl+down=scroll_page_lines:10
+keybind = ctrl+up=scroll_page_lines:-10
 #  full page
-keybind = ctrl+shift+page_down=scroll_page_down
-keybind = ctrl+shift+page_up=scroll_page_up
+keybind = ctrl+shift+down=scroll_page_down
+keybind = ctrl+shift+up=scroll_page_up
 
 # Tabs
 keybind = ctrl+k>t>n=new_tab
