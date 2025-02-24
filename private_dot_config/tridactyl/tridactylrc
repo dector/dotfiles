@@ -24,8 +24,6 @@ bind <C-b> scrollpage -1
 bind w tabclose
 bind u undo
 bind U undo window
-bind gW tabdetach
-bind gw tabpush
 
 " Tabs navigation
 bind J tabnext
@@ -71,6 +69,8 @@ bind R reload
 unbind t
 bind tm mute toggle
 bind tt fillcmdline tab
+bind tw tabpush
+bind tW tabdetach
 bind x stop
 
 bind <C-v> nmode ignore 1 mode normal
