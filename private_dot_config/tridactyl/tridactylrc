@@ -6,6 +6,8 @@ set hintchars asdfjkl;wertyuioghxcvbnm,.
 
 unbind d
 unbind D
+unbind p
+unbind P
 
 bind j scrollline 10
 bind k scrollline -10
@@ -99,6 +101,8 @@ bind yy clipboard yank
 bind yt clipboard yanktitle
 bind ym clipboard yankmd
 bind yq text2qr
+bind tp clipboard tabopen
+bind tP clipboard open
 bind . repeat
 
 bind zz zoom 1
