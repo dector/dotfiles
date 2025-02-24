@@ -18,22 +18,22 @@ keybind = ctrl+shift+down=scroll_page_down
 keybind = ctrl+shift+up=scroll_page_up
 
 # Tabs
-keybind = ctrl+k>t>n=new_tab
-keybind = ctrl+k>t>l=next_tab
-keybind = ctrl+k>t>h=previous_tab
-keybind = ctrl+k>t>w=close_tab
+keybind = ctrl+s>t>n=new_tab
+keybind = ctrl+s>t>l=next_tab
+keybind = ctrl+s>t>h=previous_tab
+keybind = ctrl+s>t>w=close_tab
 
 # Splits
-keybind = ctrl+k>s>left=new_split:left
-keybind = ctrl+k>s>right=new_split:right
-keybind = ctrl+k>s>down=new_split:down
-keybind = ctrl+k>s>up=new_split:up
+keybind = ctrl+s>s>left=new_split:left
+keybind = ctrl+s>s>right=new_split:right
+keybind = ctrl+s>s>down=new_split:down
+keybind = ctrl+s>s>up=new_split:up
 
-keybind = ctrl+k>s>h=goto_split:left
-keybind = ctrl+k>s>l=goto_split:right
-keybind = ctrl+k>s>j=goto_split:down
-keybind = ctrl+k>s>k=goto_split:up
+keybind = ctrl+s>s>h=goto_split:left
+keybind = ctrl+s>s>l=goto_split:right
+keybind = ctrl+s>s>j=goto_split:down
+keybind = ctrl+s>s>k=goto_split:up
 
 # Clipboard
-keybind = ctrl+k>y=copy_to_clipboard
-keybind = ctrl+k>p=paste_from_clipboard
+keybind = ctrl+s>y=copy_to_clipboard
+keybind = ctrl+s>p=paste_from_clipboard
