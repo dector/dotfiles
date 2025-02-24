@@ -38,8 +38,8 @@ bind gh tabopen --focus-address-bar
 bind gH home
 
 "bind B bmark
-bind B js (async () => { if((await browserBg.bookmarks.search({url: document.location.href})).length === 0) { browserBg.bookmarks.create({url: document.location.href, title: document.title}); window.alert('Bookmarked') } })()
-bind b current_url bmark
+bind b js (async () => { if((await browserBg.bookmarks.search({url: document.location.href})).length === 0) { browserBg.bookmarks.create({url: document.location.href, title: document.title}); window.alert('Bookmarked') } })()
+bind B current_url bmark
 
 "bind f hint
 bind f hint
