@@ -69,8 +69,8 @@ bind R reload
 unbind t
 bind tm mute toggle
 bind tt fillcmdline tab
-bind tw tabpush
-bind tW tabdetach
+bind td tabdetach
+bind tD fillcmdline tabpush
 bind x stop
 
 bind <C-v> nmode ignore 1 mode normal
