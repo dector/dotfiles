@@ -17,23 +17,23 @@ keybind = ctrl+up=scroll_page_lines:-10
 keybind = ctrl+shift+down=scroll_page_down
 keybind = ctrl+shift+up=scroll_page_up
 
-# Tabs
-keybind = ctrl+s>t>n=new_tab
-keybind = ctrl+s>t>l=next_tab
-keybind = ctrl+s>t>h=previous_tab
-keybind = ctrl+s>t>w=close_tab
+# Tabs `t`
+keybind = ctrl+q>t>n=new_tab
+keybind = ctrl+q>t>l=next_tab
+keybind = ctrl+q>t>h=previous_tab
+keybind = ctrl+q>t>w=close_tab
 
-# Splits
-keybind = ctrl+s>s>left=new_split:left
-keybind = ctrl+s>s>right=new_split:right
-keybind = ctrl+s>s>down=new_split:down
-keybind = ctrl+s>s>up=new_split:up
+# Splits `s`
+keybind = ctrl+q>s>left=new_split:left
+keybind = ctrl+q>s>right=new_split:right
+keybind = ctrl+q>s>down=new_split:down
+keybind = ctrl+q>s>up=new_split:up
 
-keybind = ctrl+s>s>h=goto_split:left
-keybind = ctrl+s>s>l=goto_split:right
-keybind = ctrl+s>s>j=goto_split:down
-keybind = ctrl+s>s>k=goto_split:up
+keybind = ctrl+q>s>h=goto_split:left
+keybind = ctrl+q>s>l=goto_split:right
+keybind = ctrl+q>s>j=goto_split:down
+keybind = ctrl+q>s>k=goto_split:up
 
 # Clipboard
-keybind = ctrl+s>y=copy_to_clipboard
-keybind = ctrl+s>p=paste_from_clipboard
+keybind = ctrl+q>y=copy_to_clipboard
+keybind = ctrl+q>p=paste_from_clipboard
