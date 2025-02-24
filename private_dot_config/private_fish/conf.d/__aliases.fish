@@ -15,6 +15,8 @@ alias j jj
 alias jl 'jj log --reversed'
 
 # Misc
+#alias f fzf
+alias f yazi
 alias ht htop
 alias htt btop
 alias cz chezmoi
