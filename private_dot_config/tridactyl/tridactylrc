@@ -37,6 +37,8 @@ bind gf tabfirst
 bind gh tabopen --focus-address-bar
 bind gH home
 
+bind V js const b = document.querySelector('body'); b.style.width = '70rem'; b.style.margin = '0 auto'
+
 "bind B bmark
 bind b js (async () => { if((await browserBg.bookmarks.search({url: document.location.href})).length === 0) { browserBg.bookmarks.create({url: document.location.href, title: document.title}); window.alert('Bookmarked') } })()
 bind B current_url bmark
