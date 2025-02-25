@@ -53,6 +53,9 @@ vmap <leader><leader>Y "+Y
 nmap <leader><leader>p "+p
 nmap <leader><leader>P "+P
 
+" Toggle line numbers
+nmap <leader><leader>n :set rnu!<CR>
+
 " Use `U` for Redo action
 nnoremap U <C-R>
 
