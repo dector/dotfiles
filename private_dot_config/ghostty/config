@@ -28,15 +28,19 @@ keybind = ctrl+q>t>h=previous_tab
 keybind = ctrl+q>t>w=close_tab
 
 # Splits `s`
-keybind = ctrl+q>s>left=new_split:left
-keybind = ctrl+q>s>right=new_split:right
-keybind = ctrl+q>s>down=new_split:down
-keybind = ctrl+q>s>up=new_split:up
+keybind = ctrl+q>ctrl+w>left=new_split:left
+keybind = ctrl+q>ctrl+w>right=new_split:right
+keybind = ctrl+q>ctrl+w>down=new_split:down
+keybind = ctrl+q>ctrl+w>up=new_split:up
+keybind = ctrl+q>ctrl+w>v=new_split:right
+keybind = ctrl+q>ctrl+w>s=new_split:down
+keybind = ctrl+q>ctrl+w>shift+v=new_split:left
+keybind = ctrl+q>ctrl+w>shift+s=new_split:up
 
-keybind = ctrl+q>s>h=goto_split:left
-keybind = ctrl+q>s>l=goto_split:right
-keybind = ctrl+q>s>j=goto_split:down
-keybind = ctrl+q>s>k=goto_split:up
+keybind = ctrl+q>ctrl+w>h=goto_split:left
+keybind = ctrl+q>ctrl+w>l=goto_split:right
+keybind = ctrl+q>ctrl+w>j=goto_split:down
+keybind = ctrl+q>ctrl+w>k=goto_split:up
 
 # Clipboard
 keybind = ctrl+q>y=copy_to_clipboard
