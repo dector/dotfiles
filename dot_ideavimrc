@@ -57,6 +57,9 @@ map gm <Action>(ShowIntentionActions)
 map g; <Action>(JumpToLastChange)
 map g, <Action>(JumpToNextChange)
 "
+map gFF <action>(ShowReformatFileDialog)
+map gFI <action>(OptimizeImports)
+"
 nmap [m <Action>(MethodUp)
 nmap ]m <Action>(MethodDown)
 nmap ]c <Action>(VcsShowNextChangeMarker)
@@ -135,10 +138,11 @@ map <leader>ch <Action>(Vcs.ShowHistoryForBlock)
 map <leader>cR <Action>(Vcs.RollbackChangedLines)
 map <leader>cH <Action>(LocalHistory.ShowProjectHistory)
 map <leader>cm <Action>(LocalHistory.PutLabel)
+map <leader>cs <Action>(ChangesView.Shelve)
 
-map <leader>cf <action>(ReformatCode)
-map <leader>cF <action>(ShowReformatFileDialog)
-map <leader>cI <action>(OptimizeImports)
+"map <leader>cf <action>(ReformatCode)
+"map <leader>cF <action>(ShowReformatFileDialog)
+"map <leader>cI <action>(OptimizeImports)
 
 " Split ` s`
 map <leader>sd <Action>(MoveTabDown)
