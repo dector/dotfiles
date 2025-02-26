@@ -10,8 +10,8 @@ unbind D
 unbind p
 unbind P
 
-bind j scrollline 10
-bind k scrollline -10
+bind j scrollline 7
+bind k scrollline -7
 bind l scrollline 30
 bind h scrollline -30
 bind <A-j> scrollline 2
