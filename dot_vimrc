@@ -42,6 +42,8 @@ syntax on
 
 " Hide all highlights on ` hh`
 nnoremap <leader>hh :noh<CR>
+" Toggle line numbers
+nmap <leader>hn :set rnu!<CR>
 
 " Copy selection to system clipboard
 nmap <leader><leader>yy "+yy
@@ -52,9 +54,6 @@ vmap <leader><leader>Y "+Y
 " Paste from system clipboard
 nmap <leader><leader>p "+p
 nmap <leader><leader>P "+P
-
-" Toggle line numbers
-nmap <leader><leader>n :set rnu!<CR>
 
 " Use `U` for Redo action
 nnoremap U <C-R>
