@@ -4,6 +4,7 @@ colourscheme shydactyl-dark
 set smoothscroll true
 set hintchars asdfjkl;wertyuioghxcvbnm,.
 
+unbind r
 unbind d
 unbind D
 unbind p
