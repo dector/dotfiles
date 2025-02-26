@@ -82,6 +82,6 @@ nnoremap q <Nop>
 
 " Enter empty line before or after current line 
 " issue: needs `uu` instead of `u`
-nmap <Enter> o<ESC>k
+nmap <C-Enter> o<ESC>k
 nmap <S-Enter> O<ESC>j
 
