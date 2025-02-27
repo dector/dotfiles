@@ -10,14 +10,16 @@ unbind d
 unbind D
 unbind p
 unbind P
+unbind M
+unbind m
 
-bind & repeat
+bind . repeat
 
 bind j scrollline 7
 bind k scrollline -7
 bind J scrollline 20
 bind K scrollline -20
-bind . scrollline 20
+bind m scrollline 20
 bind , scrollline -20
 bind h scrollpx -50
 bind l scrollpx 50
@@ -94,14 +96,12 @@ bind <S-Insert> mode ignore
 
 bind <C-o> jumpprev
 bind <C-i> jumpnext
-unbind M
-unbind m
-bind mj tabmove +1
-bind mk tabmove -1
-"bind mJ tabmove +10
-"bind mK tabmove -10
-bind mF tabmove start
-bind mL tabmove end
+bind \j tabmove +1
+bind \k tabmove -1
+"bind \J tabmove +10
+"bind \K tabmove -10
+bind \H tabmove start
+bind \L tabmove end
 
 bind o fillcmdline open
 bind O current_url open
