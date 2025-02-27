@@ -11,10 +11,14 @@ unbind D
 unbind p
 unbind P
 
+bind & repeat
+
 bind j scrollline 7
 bind k scrollline -7
 bind J scrollline 20
 bind K scrollline -20
+bind . scrollline 20
+bind , scrollline -20
 bind h scrollpx -50
 bind l scrollpx 50
 bind <A-j> scrollline 2
@@ -108,7 +112,7 @@ bind ym clipboard yankmd
 bind yq text2qr
 bind tp clipboard tabopen
 bind tP clipboard open
-bind . repeat
+"bind . repeat
 
 bind zz zoom 1
 bind zi zoom 0.1 true
