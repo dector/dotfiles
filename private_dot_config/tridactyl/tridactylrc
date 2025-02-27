@@ -3,6 +3,7 @@ colourscheme shydactyl-dark
 
 set smoothscroll true
 set hintchars asdfjkl;wertyuioghxcvbnm,.
+set newtab localhost:1111
 
 unbind r
 unbind d
@@ -12,8 +13,8 @@ unbind P
 
 bind j scrollline 7
 bind k scrollline -7
-bind l scrollline 30
-bind h scrollline -30
+bind J scrollline 20
+bind K scrollline -20
 bind <A-j> scrollline 2
 bind <A-k> scrollline -2
 bind <A-h> scrollpx -50
@@ -29,12 +30,12 @@ bind u undo
 bind U undo window
 
 " Tabs navigation
-bind J tabnext
-bind K tabprev
+bind L tabnext
+bind H tabprev
 bind ) tabnext
 bind ( tabprev
-bind H back
-bind L forward
+bind h back
+bind l forward
 bind gl tablast
 bind gf tabfirst
 bind gh tabopen --focus-address-bar
