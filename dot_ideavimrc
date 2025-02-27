@@ -84,9 +84,12 @@ vnoremap > >gv
 map <C-S-j> <Action>(MoveStatementDown)
 map <C-S-k> <Action>(MoveStatementUp)
 
+map <C-S-l> <Action>(EditorDuplicate)
+
 " Copilot
 imap <C-n> <Action>(copilot.requestCompletions)
-map <C-S-Space> <Action>(copilot.chat.inline)
+map <C-S-n> <Action>(EditorScrollToCenter) <Action>(copilot.chat.inline)
+"map <C-S-Space> <Action>(copilot.chat.inline)
 "imap <C-g> <Action>(copilot.requestCompletions)
 "imap <C-n> <Action>(copilot.applyInlaysNextLine)
 "imap <C-S-n> <Action>(copilot.applyInlaysNextWord)
@@ -235,6 +238,7 @@ map <leader>rO <Action>(OverrideMethods)
 
 " Actions
 map <leader>aa <Action>(android.deploy.CodeSwap)
+"map <leader>ad <Action>(EditorDuplicate)
 map <leader>aA <Action>(android.deploy.ApplyChanges)
 map <leader>aj <Action>(EditorJoinLines)
 map <leader>ar <Action>(Run)
