@@ -15,6 +15,8 @@ bind j scrollline 7
 bind k scrollline -7
 bind J scrollline 20
 bind K scrollline -20
+bind h scrollpx -50
+bind l scrollpx 50
 bind <A-j> scrollline 2
 bind <A-k> scrollline -2
 bind <A-h> scrollpx -50
@@ -34,8 +36,8 @@ bind L tabnext
 bind H tabprev
 bind ) tabnext
 bind ( tabprev
-bind h back
-bind l forward
+bind - back
+bind + forward
 bind gl tablast
 bind gf tabfirst
 bind gh tabopen --focus-address-bar
