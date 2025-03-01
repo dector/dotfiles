@@ -19,8 +19,8 @@ bind j scrollline 7
 bind k scrollline -7
 bind J scrollline 20
 bind K scrollline -20
-bind m scrollline 20
-bind , scrollline -20
+bind m scrollline 30
+bind , scrollline -30
 bind h scrollpx -50
 bind l scrollpx 50
 bind <A-j> scrollline 2
