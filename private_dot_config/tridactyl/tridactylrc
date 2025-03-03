@@ -42,7 +42,8 @@ bind L tabnext
 bind H tabprev
 bind ) tabnext
 bind ( tabprev
-bind a back
+bind n back
+bind N forward
 bind - back
 bind + forward
 bind gl tablast
@@ -96,12 +97,12 @@ bind <S-Insert> mode ignore
 
 bind <C-o> jumpprev
 bind <C-i> jumpnext
-bind \j tabmove +1
-bind \k tabmove -1
-"bind \J tabmove +10
-"bind \K tabmove -10
-bind \h tabmove start
-bind \l tabmove end
+bind Mj tabmove +1
+bind Mk tabmove -1
+"bind MJ tabmove +10
+"bind MK tabmove -10
+bind Mh tabmove start
+bind Ml tabmove end
 
 bind o fillcmdline open
 bind O current_url open
@@ -137,4 +138,5 @@ bind ;& current_url bmark
 bind ;{ focusinput -l
 bind ;} focusinput -n
 bind ;/ reload
+bind $ tabopen
 
