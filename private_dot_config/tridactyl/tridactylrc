@@ -101,7 +101,7 @@ bind Mj tabmove +1
 bind Mk tabmove -1
 "bind MJ tabmove +10
 "bind MK tabmove -10
-bind Mh tabmove start
+bind Mf tabmove start
 bind Ml tabmove end
 
 bind o fillcmdline open
