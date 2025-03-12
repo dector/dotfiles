@@ -42,8 +42,7 @@ bind L tabnext
 bind H tabprev
 bind ) tabnext
 bind ( tabprev
-bind n back
-bind N forward
+bind ' back
 bind - back
 bind + forward
 bind gl tablast
