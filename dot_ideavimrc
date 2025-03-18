@@ -1,72 +1,130 @@
 source ~/.vimrc
-
 " Desaturate ideavim icon
 set ideastatusicon=gray
 
-" --- Plugins https://jb.gg/ideavim-plugins ---
+
+
+" ----- PLUGINS -----
+" https://jb.gg/ideavim-plugins
+
+" Project files
 set nerdtree
+" Vim-surround
 set surround
-set sneak " sadly not supporting Sneak_f/Sneak_t
-Plug 'machakann/vim-highlightedyank' " highlight copied text
+" Partially implemented sneak (sadly not supporting Sneak_f/Sneak_t)
+set sneak
+
+" Visual feedback for yanking
+Plug 'machakann/vim-highlightedyank'
+" Hotkeys for code commenting
 Plug 'tpope/vim-commentary'
 
-set which-key
-set timeoutlen=1000
-" make the popup appear much slower
-let g:WhichKey_DefaultDelay = 700
-" close the popup and don't process formerly typed keys
-let g:WhichKey_ProcessUnknownMappings = "false"
+"set which-key
+"" make the popup appear much slower
+"let g:WhichKey_DefaultDelay = 500
+"" close the popup and don't process formerly typed keys
+"let g:WhichKey_ProcessUnknownMappings = "false"
 
-" --- Key bindings ---
+" Should finish vim combination in 1sec
+set timeoutlen=1000
+
+" ----- END PLUGINS -----
+
+
+
+" # ----- KEY BINDINGS -----
+
+
+" ----- Meta -----
+
+" Edit ideavim config
+nnoremap <leader>'e :e ~/.ideavimrc<CR>
+
+" Reload ideavim config
+nnoremap <leader>'r :source ~/.ideavimrc<CR>
+
+"nnoremap <leader>'a <Action>(VimFindActionIdAction)
+
+" ----- END Meta -----
+
+
+" ----- Misc -----
 
 " Better undo/redo
 map u <Action>($Undo)
 map <C-r> <Action>($Redo)
 map U <Action>($Redo)
 
-" Edit ideavim config
-nnoremap <leader>'e :e ~/.ideavimrc<CR>
-nnoremap <leader>'r :source ~/.ideavimrc<CR>
-"nnoremap <leader>'a <Action>(VimFindActionIdAction)
-
-" Next error
+" Jump to the Next error
 map <S-Space> <Action>(GotoNextError)
 
 " AceJump: Ctrl-j
 map <C-j> <Action>(AceAction)
 
-" Code navigation
+" Close active tab
+map <leader>w <action>(CloseContent)
+" Open NERDTree (use q to exit)
+map <leader>q :NERDTreeFocus<CR>
+
+" ----- END Misc -----
+
+
+" ----- Code Navigation -----
+
+" Go to Declaration
 map gd <Action>(GotoDeclaration)
 "map gD <Action>(GotoDefinition)
+" Go to tYpe declaration
 map gy <Action>(GotoTypeDeclaration)
+" Go to Interface method
 map gi <Action>(GotoSuperMethod)
+" Go to Implementation
 map gI <Action>(GotoImplementation)
 " change definition
 "map cd <Action>(RenameElement)
+" Go to Usages (show locally)
 map gu <Action>(ShowUsages)
+" Go to Usages (show in panel)
 map gU <Action>(FindUsages)
-map gp <Action>(FindUsages)
-" goto symbol
+"map gp <Action>(FindUsages)
+" Go to Symbol
 map gs <Action>(FileStructurePopup)
-"
+
+" Go to next/prev diagnostics (error)
 map g] <Action>(GotoNextError)
 map g[ <Action>(GotoPreviousError)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+" Go Format code
 map gf <Action>(ReformatCode)
+" Go Hover info
 map gh <Action>(ShowHoverInfo)
+" Go javadoc
 map gH <Action>(QuickJavaDoc)
+" Go options menu
 map gm <Action>(ShowIntentionActions)
+" Go last changed
 map g; <Action>(JumpToLastChange)
+" Go next changed
 map g, <Action>(JumpToNextChange)
-"
+
+" Go Format File
 map gFF <action>(ShowReformatFileDialog)
+" Go Format Imports (Optimize)
 map gFI <action>(OptimizeImports)
-"
+
+" Jump prev/next method
 nmap [m <Action>(MethodUp)
 nmap ]m <Action>(MethodDown)
+" Jump prev/next change
 nmap ]c <Action>(VcsShowNextChangeMarker)
 nmap [c <Action>(VcsShowPrevChangeMarker)
 
-" Selection
+" ----- END Code Navigation -----
+
+
+" ----- Selection -----
+
 nmap ]x <Action>(EditorSelectWord)
 nmap [x <Action>(EditorUnSelectWord)
 vmap ]x <Action>(EditorSelectWord)
@@ -76,17 +134,30 @@ nmap <C-S-[> <Action>(EditorUnSelectWord)
 vmap <C-S-]> <Action>(EditorSelectWord)
 vmap <C-S-[> <Action>(EditorUnSelectWord)
 
-" Easy visual indentation
+" ----- END Selection -----
+
+
+" ----- Better indentations -----
+
 vnoremap < <gv
 vnoremap > >gv
 
-" Move statements
+" ----- END Better indentations -----
+
+
+" ----- Move statements -----
+
 map <C-S-j> <Action>(MoveStatementDown)
 map <C-S-k> <Action>(MoveStatementUp)
 
+" Duplicate Line
 map <C-S-l> <Action>(EditorDuplicate)
 
-" Copilot
+" ----- END Move statements -----
+
+
+" ----- Copilot -----
+
 imap <C-n> <Action>(copilot.requestCompletions)
 map <C-S-n> <Action>(EditorScrollToCenter) <Action>(copilot.chat.inline)
 "map <C-S-Space> <Action>(copilot.chat.inline)
@@ -94,18 +165,27 @@ map <C-S-n> <Action>(EditorScrollToCenter) <Action>(copilot.chat.inline)
 "imap <C-n> <Action>(copilot.applyInlaysNextLine)
 "imap <C-S-n> <Action>(copilot.applyInlaysNextWord)
 
-" Popup navigation
+" ----- END Copilot -----
+
+
+" ----- Popup navigation -----
+
 inoremap <C-j> <Action>(PopupMenu-selectNext)
 inoremap <C-k> <Action>(PopupMenu-selectPrev)
 
-" Switcher
+" ----- END Popup navigation -----
+
+
+" ----- Switcher -----
+
 "map <S-<Tab>> <Action>(Switcher)
 map <leader>gg <Action>(Switcher)
 
-" Close active tab
-map <leader>w <action>(CloseContent)
+" ----- END Switcher -----
 
-" Tab navigation ` t`
+
+" ----- Tab navigation [` t`] -----
+
 noremap <S-h> :tabprev<CR>
 noremap <S-l> :tabnext<CR>
 map <leader>tn :tabnext<CR>
@@ -114,14 +194,18 @@ map <leader>tu <Action>(ReopenClosedTab)
 map <leader>tc <Action>(CloseAllUnmodifiedEditors)
 map <leader>tC <Action>(CloseAllEditorsButActive)
 
-" Comment lines ` c`
+" ----- END Tab navigation -----
+
+" ----- Comment lines [` c`] -----
+
 "map <leader>c <action>(CommentByLineComment)
 " using `Ctrl+/`
 
-" Open NERDTree (use q to exit)
-map <leader>q :NERDTreeFocus<CR>
+" ----- END Comment lines -----
 
-" Regions ` z`
+
+" ----- Regions [` z`] -----
+
 map <leader>zC :action CollapseAllRegions<CR>
 map <leader>zX :action ExpandAllRegions<CR>
 map <leader>zc :action CollapseRegion<CR>
@@ -129,7 +213,11 @@ map <leader>zx :action ExpandRegion<CR>
 map <leader>zu :action EditorIncreaseFontSizeGlobal<CR>
 map <leader>zd :action EditorDecreaseFontSizeGlobal<CR>
 
-" Clipboard/Changes/Code ` c`
+" ----- END Regions -----
+
+
+" ----- Clipboard/Changes/Code [` c`] -----
+
 map <leader>cp <Action>($Paste)
 map <leader>cP <Action>(PasteMultiple)
 map <leader>cy <Action>($Copy)
@@ -156,7 +244,11 @@ map <leader>cs <Action>(ChangesView.Shelve)
 "map <leader>cF <action>(ShowReformatFileDialog)
 "map <leader>cI <action>(OptimizeImports)
 
-" Split ` s`
+" ----- END Clipboard/Changes/Code -----
+
+
+" ----- Split [` s`] -----
+
 map <leader>sd <Action>(MoveTabDown)
 map <leader>sD <Action>(SplitHorizontally)
 map <leader>sL <Action>(StretchSplitToRight)
@@ -176,7 +268,11 @@ map <leader>sU <Action>(StretchSplitToBottom)
 map <leader>sx <Action>(Unsplit)
 map <leader>sX <Action>(UnsplitAll)
 
-" View ... ` v`
+" ----- END Split -----
+
+
+" ----- View ... [` v`] -----
+
 map <leader>vb <Action>(ShowBookmarks)
 map <leader>vd <Action>(QuickImplementations)
 map <leader>vp <Action>(ParameterInfo)
@@ -184,14 +280,22 @@ map <leader>vy <Action>(ExpressionTypeInfo)
 map <leader>vw <action>(EditorToggleUseSoftWraps)
 map <leader>vv zz
 
-" MultiHighlight (requires plugin)
+" ----- END View ... -----
+
+
+" ----- MultiHighlight (requires plugin) -----
+
 nmap <leader>hw <action>(MultiHighlight)<Esc>
 nmap <leader>hc <action>(MultiHighlightWithColor)
 nmap <leader>hd <action>(MultiHighlight.ClearAction)
 
 nmap <leader>hu <action>(HighlightUsagesInFile)
 
-" Find ` f`
+" ----- END MultiHighlight -----
+
+
+" ----- Find [` f`] -----
+
 map <leader>fe <action>(SearchEverywhere)
 map <leader>fc <action>(GotoClass)
 map <leader>ff <action>(GotoFile)
@@ -203,7 +307,11 @@ map <leader>ft <action>(TextSearchAction)
 map <leader>fr <action>(RecentFiles)
 map <leader>fl <action>(RecentLocations)
 
-" Open ` o`
+" ----- END Find -----
+
+
+" ----- Open [` o`] -----
+
 map <leader>oa <action>(copilot.chat.show)
 map <leader>oA <action>(ActivateStudioBotToolWindow)
 map <leader>ob <action>(ActivateBuildToolWindow)
@@ -231,7 +339,11 @@ map <leader>ot <action>(ActivateTerminalToolWindow)
 map <leader>oT <action>(ToolWindowsGroup)
 map <leader>o; <action>(JumpToLastWindow)
 
-" Refactoring ` r`
+" ----- END Open -----
+
+
+" ----- Refactoring [` r`] -----
+
 map <leader>rn <Action>(RenameElement)
 map <leader>rm <Action>(ExtractMethod)
 map <leader>rv <Action>(IntroduceVariable)
@@ -242,7 +354,11 @@ map <leader>ri <Action>(Inline)
 map <leader>rI <Action>(ImplementMethods)
 map <leader>rO <Action>(OverrideMethods)
 
-" Actions
+" ----- END Refactoring -----
+
+
+" ----- Actions -----
+
 map <leader>aa <Action>(android.deploy.CodeSwap) <Action>(Flutter.Toolbar.ReloadAction)
 "map <leader>ad <Action>(EditorDuplicate)
 map <leader>aA <Action>(android.deploy.ApplyChanges) <Action>(Flutter.Toolbar.ReloadAction)
@@ -257,7 +373,11 @@ map <leader>abP <Action>(MakeGradleProjectWithTests)
 map <leader>abm <Action>(AssembleGradleModule)
 map <leader>ab! <Action>(RebuildGradleProject)
 
-" Bookmarks
+" ----- END Actions -----
+
+
+" ----- Bookmarks -----
+
 map <S-m> :action ToggleBookmark<CR>
 map mA :action ToggleBookmarkA<CR>
 map ma :action GotoBookmarkA<CR>
@@ -311,3 +431,8 @@ map mY :action ToggleBookmarkY<CR>
 map my :action GotoBookmarkY<CR>
 map mZ :action ToggleBookmarkZ<CR>
 map mz :action GotoBookmarkZ<CR>
+
+" ----- END Bookmarks -----
+
+
+" --- /KEY BINDINGS ---
