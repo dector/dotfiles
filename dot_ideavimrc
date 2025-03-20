@@ -76,10 +76,10 @@ map gd <Action>(GotoDeclaration)
 "map gD <Action>(GotoDefinition)
 " Go to tYpe declaration
 map gy <Action>(GotoTypeDeclaration)
-" Go to Interface method
-map gi <Action>(GotoSuperMethod)
 " Go to Implementation
-map gI <Action>(GotoImplementation)
+map gi <Action>(GotoImplementation)
+" Go to Interface method
+map gI <Action>(GotoSuperMethod)
 " change definition
 "map cd <Action>(RenameElement)
 " Go to Usages (show locally)
@@ -363,6 +363,7 @@ map <leader>aa <Action>(android.deploy.CodeSwap) <Action>(Flutter.Toolbar.Reload
 "map <leader>ad <Action>(EditorDuplicate)
 map <leader>aA <Action>(android.deploy.ApplyChanges) <Action>(Flutter.Toolbar.ReloadAction)
 map <leader>ac <Action>(ActivateCommitToolWindow)
+map <leader>aD <Action>(AndroidConnectDebuggerAction)
 map <leader>aj <Action>(EditorJoinLines)
 map <leader>ar <Action>(Run)
 map <leader>aR <Action>(ChooseRunConfiguration)
@@ -374,6 +375,14 @@ map <leader>abm <Action>(AssembleGradleModule)
 map <leader>ab! <Action>(RebuildGradleProject)
 
 " ----- END Actions -----
+
+
+" ----- Debug -----
+
+map <leader>db <Action>(ToggleLineBreakpoint)
+map <leader>dB <Action>(BreakpointActionsGroup)
+
+" ----- END Debug -----
 
 
 " ----- Bookmarks -----
