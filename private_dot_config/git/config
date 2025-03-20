@@ -2,3 +2,6 @@
     path = ./config.private
 [init]
 	defaultBranch = main
+[merge]
+    conflictstyle = diff3
+
