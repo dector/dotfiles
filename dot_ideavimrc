@@ -223,6 +223,7 @@ map <leader>cP <Action>(PasteMultiple)
 map <leader>cy <Action>($Copy)
 "
 map <leader>ca <Action>(Annotate)
+map <leader>cA <Action>(ChangesView.AddUnversioned)
 map <leader>cu <Action>(Vcs.UpdateProject)
 map <leader>cU <Action>(Git.Fetch)
 map <leader>cb <Action>(Git.Branches)
