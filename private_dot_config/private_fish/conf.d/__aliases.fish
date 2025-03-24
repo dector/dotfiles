@@ -16,10 +16,12 @@ alias jl 'jj log --reversed'
 
 # Misc
 #alias f fzf
+alias b bat
 alias f yazi
 alias ht htop
 alias htt btop
 alias cz chezmoi
+alias t tailscale
 
 # Clipboard
 alias clp 'xclip -sel c'
