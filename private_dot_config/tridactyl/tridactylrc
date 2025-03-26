@@ -114,11 +114,14 @@ bind tp clipboard tabopen
 bind tP clipboard open
 "bind . repeat
 
+" Zoom
 bind zz zoom 1
 bind zi zoom 0.1 true
 bind zd zoom -0.1 true
 bind zI zoom 0.5 true
 bind zD zoom -0.5 true
+bind zm zoom 1 true
+bind zM zoom 2.5
 
 bind <C-t> tabopen --focus-address-bar
 
