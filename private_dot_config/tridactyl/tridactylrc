@@ -45,10 +45,9 @@ bind ( tabprev
 bind ' back
 bind - back
 bind + forward
+bind gh tabfirst
 bind gl tablast
-bind gf tabfirst
-bind gh tabopen --focus-address-bar
-bind gH home
+bind gf tabopen
 
 bind V js const b = document.querySelector('body'); b.style.width = '70rem'; b.style.margin = '0 auto'
 
