@@ -16,7 +16,7 @@ alias jl 'jj log --reversed'
 
 # Misc
 #alias f fzf
-alias b bat
+alias c bat
 alias f yazi
 alias ht htop
 alias htt btop
