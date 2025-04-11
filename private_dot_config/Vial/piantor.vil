@@ -4,7 +4,7 @@
   "layout": [
     [
       [
-        "LT6(KC_TAB)",
+        "TD(13)",
         "KC_Q",
         "KC_W",
         "KC_E",
@@ -20,7 +20,7 @@
         "KC_G"
       ],
       [
-        "TD(13)",
+        "LT6(KC_TAB)",
         "KC_Z",
         "KC_X",
         "KC_C",
@@ -30,7 +30,7 @@
       [
         "KC_LCTRL",
         "LT5(KC_SPACE)",
-        "TD(17)",
+        "KC_LSHIFT",
         -1,
         -1,
         -1
@@ -87,7 +87,7 @@
       ],
       [
         "KC_TRNS",
-        "M0",
+        "LSFT(KC_GRAVE)",
         "LSFT(KC_6)",
         "LSFT(KC_MINUS)",
         "KC_KP_ASTERISK",
@@ -107,7 +107,7 @@
         "KC_8",
         "KC_9",
         "KC_0",
-        "KC_NO"
+        "LSFT(KC_BSLASH)"
       ],
       [
         "KC_MINUS",
@@ -929,9 +929,9 @@
     [
       "KC_LSHIFT",
       "KC_LSHIFT",
-      "KC_NO",
       "OSM(MOD_LSFT|MOD_LALT)",
-      200
+      "OSM(MOD_LSFT|MOD_LALT)",
+      160
     ],
     [
       "KC_BTN3",
@@ -948,8 +948,8 @@
       200
     ],
     [
-      "KC_LGUI",
-      "KC_LGUI",
+      "LT6(KC_NO)",
+      "LT6(KC_NO)",
       "TO(7)",
       "KC_NO",
       200
