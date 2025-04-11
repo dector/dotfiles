@@ -47,7 +47,7 @@ bind - back
 bind + forward
 bind gh tabfirst
 bind gl tablast
-bind gf tabopen
+bind nt tabopen
 
 bind V js const b = document.querySelector('body'); b.style.width = '70rem'; b.style.margin = '0 auto'
 
@@ -79,6 +79,7 @@ bind ;W hint -w
 bind ;x hint -K
 bind ;X hint -k
 bind ;y hint -y
+bind ;f tabopen
 
 bind R reload
 unbind t
@@ -95,12 +96,14 @@ bind <S-Insert> mode ignore
 
 bind <C-o> jumpprev
 bind <C-i> jumpnext
-bind Mj tabmove +1
-bind Mk tabmove -1
+"bind Mj tabmove +1
+"bind Mk tabmove -1
 "bind MJ tabmove +10
 "bind MK tabmove -10
-bind Mf tabmove start
-bind Ml tabmove end
+bind >> tabmove +1
+bind << tabmove -1
+bind <f tabmove start
+bind >l tabmove end
 
 bind o fillcmdline open
 bind O current_url open
@@ -139,5 +142,4 @@ bind ;& current_url bmark
 bind ;{ focusinput -l
 bind ;} focusinput -n
 bind ;/ reload
-bind $ tabopen
 
