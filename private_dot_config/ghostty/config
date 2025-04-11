@@ -1,10 +1,14 @@
+theme = catppuccin-frappe
+
 # GTK windows
 window-decoration = false
 gtk-titlebar = false
 
 # Terminal UI
 font-family = "Monaspace Argon"
+cursor-style = block
 cursor-style-blink = false
+#shell-integration-features = no-cursor
 
 # Scrolling
 #  top/bottom
