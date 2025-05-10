@@ -119,6 +119,8 @@ nmap ]m <Action>(MethodDown)
 " Jump prev/next change
 nmap ]c <Action>(VcsShowNextChangeMarker)
 nmap [c <Action>(VcsShowPrevChangeMarker)
+nmap ]] <Action>(VcsShowNextChangeMarker)
+nmap [[ <Action>(VcsShowPrevChangeMarker)
 
 " ----- END Code Navigation -----
 
