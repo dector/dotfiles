@@ -162,7 +162,7 @@ map <C-S-l> <Action>(EditorDuplicate)
 " ----- Copilot -----
 
 map <A-g> <Action>(aiplugin.gemini.editor.group)
-map <A-j> <Action>(sml.studiobot.generate.code)
+map <A-j> <Action>(sml.studiobot.generate.code) <Action>(sml.studiobot.custom.transform)
 
 imap <C-n> <Action>(copilot.requestCompletions)
 map <C-S-n> <Action>(EditorScrollToCenter) <Action>(copilot.chat.inline)
