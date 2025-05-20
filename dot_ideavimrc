@@ -57,6 +57,7 @@ map U <Action>($Redo)
 
 " Jump to the Next error
 map <S-Space> <Action>(GotoNextError)
+map <C-Space> <Action>(GotoNextError)
 
 " AceJump: Ctrl-j
 map <C-j> <Action>(AceAction)
@@ -159,6 +160,9 @@ map <C-S-l> <Action>(EditorDuplicate)
 
 
 " ----- Copilot -----
+
+map <A-g> <Action>(aiplugin.gemini.editor.group)
+map <A-j> <Action>(sml.studiobot.generate.code)
 
 imap <C-n> <Action>(copilot.requestCompletions)
 map <C-S-n> <Action>(EditorScrollToCenter) <Action>(copilot.chat.inline)
