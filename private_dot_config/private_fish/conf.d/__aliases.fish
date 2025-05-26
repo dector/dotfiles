@@ -13,6 +13,7 @@ alias g git
 alias gs 'git status'
 alias j jj
 alias jl 'jj log --reversed'
+alias ji jjui
 
 # Misc
 #alias f fzf
