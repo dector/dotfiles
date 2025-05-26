@@ -59,8 +59,8 @@ map U <Action>($Redo)
 map <S-Space> <Action>(GotoNextError)
 map <C-Space> <Action>(GotoNextError)
 
-" AceJump: Ctrl-j
-map <C-j> <Action>(AceAction)
+" AceJump: Alt-j
+map <A-j> <Action>(AceAction)
 
 " Close active tab
 map <leader>w <action>(CloseContent)
@@ -161,8 +161,9 @@ map <C-S-l> <Action>(EditorDuplicate)
 
 " ----- Copilot -----
 
-map <A-g> <Action>(aiplugin.gemini.editor.group)
-map <A-j> <Action>(sml.studiobot.generate.code) <Action>(sml.studiobot.custom.transform)
+map <C-g> <Action>(aiplugin.gemini.editor.group)
+map <C-j> <Action>(sml.studiobot.generate.code) <Action>(sml.studiobot.custom.transform)
+map <A-S-j> <Action>(ActivateStudioBotToolWindow)
 
 imap <C-n> <Action>(copilot.requestCompletions)
 map <C-S-n> <Action>(EditorScrollToCenter) <Action>(copilot.chat.inline)
@@ -313,6 +314,8 @@ map <leader>ft <action>(TextSearchAction)
 "
 map <leader>fr <action>(RecentFiles)
 map <leader>fl <action>(RecentLocations)
+
+map <leader>fw <action>(FindMenuGroup)
 
 " ----- END Find -----
 
