@@ -57,7 +57,8 @@ map U <Action>($Redo)
 
 " Jump to the Next error
 map <S-Space> <Action>(GotoNextError)
-map <C-Space> <Action>(GotoNextError)
+imap <C-Space> <Action>(CodeCompletion)
+nmap <C-Space> <Action>(GotoNextError)
 
 " AceJump: Alt-j
 map <A-j> <Action>(AceAction)
@@ -90,6 +91,7 @@ map gU <Action>(FindUsages)
 "map gp <Action>(FindUsages)
 " Go to Symbol
 map gs <Action>(FileStructurePopup)
+map gS <Action>(GotoSymbol)
 
 " Go to next/prev diagnostics (error)
 map g] <Action>(GotoNextError)
@@ -290,6 +292,8 @@ map <leader>vv zz
 
 " ----- END View ... -----
 
+
+nmap <leader>ha <action>($SelectAll)
 
 " ----- MultiHighlight (requires plugin) -----
 
