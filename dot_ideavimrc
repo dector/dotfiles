@@ -68,6 +68,8 @@ map <leader>w <action>(CloseContent)
 " Open NERDTree (use q to exit)
 map <leader>q :NERDTreeFocus<CR>
 
+nmap <C-p> <Action>(ParameterInfo)
+
 " ----- END Misc -----
 
 
