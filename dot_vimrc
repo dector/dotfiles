@@ -54,6 +54,8 @@ vmap <leader><leader>Y "+Y
 " Paste from system clipboard
 nmap <leader><leader>p "+p
 nmap <leader><leader>P "+P
+vmap <leader><leader>p "+p
+vmap <leader><leader>P "+P
 
 " Use `U` for Redo action
 nnoremap U <C-R>
