@@ -49,3 +49,4 @@ keybind = ctrl+q>ctrl+w>k=goto_split:up
 # Clipboard
 keybind = ctrl+q>y=copy_to_clipboard
 keybind = ctrl+q>p=paste_from_clipboard
+keybind = shift+enter=text:\n
