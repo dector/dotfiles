@@ -1,0 +1,6 @@
+[tools]
+claude = "latest"
+glow = "latest"
+jj = "latest"
+node = "latest"
+"ubi:dector/lampa" = "latest"
