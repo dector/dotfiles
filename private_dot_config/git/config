@@ -5,3 +5,10 @@
 [merge]
     conflictstyle = diff3
 
+[diff]
+    tool = diffsitter
+[difftool]
+    prompt = false
+[difftool "diffsitter"]
+    cmd = diffsitter "$LOCAL" "$REMOTE"
+
