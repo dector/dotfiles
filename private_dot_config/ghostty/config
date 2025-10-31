@@ -4,11 +4,19 @@ theme = catppuccin-frappe
 window-decoration = false
 gtk-titlebar = false
 
+window-width = 115
+window-height = 35
+
 # Terminal UI
 font-family = "Monaspace Argon"
 cursor-style = block
 cursor-style-blink = false
 #shell-integration-features = no-cursor
+
+# Terminfo fix
+# https://ghostty.org/docs/help/terminfo
+shell-integration-features = sudo
+shell-integration-features = ssh-env
 
 # Scrolling
 #  top/bottom
