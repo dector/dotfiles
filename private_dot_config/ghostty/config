@@ -1,4 +1,4 @@
-theme = catppuccin-frappe
+#theme = Catppuccin Frappe
 
 command = /usr/sbin/fish
 
