@@ -1,5 +1,7 @@
 theme = catppuccin-frappe
 
+command = /usr/sbin/fish
+
 # GTK windows
 window-decoration = false
 gtk-titlebar = false
