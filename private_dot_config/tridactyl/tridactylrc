@@ -13,6 +13,8 @@ unbind P
 unbind M
 unbind m
 
+bind gf tabnew
+
 bind . repeat
 
 bind j scrollline 7
