@@ -27,11 +27,11 @@ keybind = shift+end=scroll_to_bottom
 # prompt
 keybind = shift+page_down=jump_to_prompt:1
 keybind = shift+page_up=jump_to_prompt:-1
-keybind = shift+down=scroll_page_lines:1
-keybind = shift+up=scroll_page_lines:-1
+keybind = shift+down=scroll_page_lines:8
+keybind = shift+up=scroll_page_lines:-8
 #  few lines
-keybind = ctrl+down=scroll_page_lines:8
-keybind = ctrl+up=scroll_page_lines:-8
+keybind = ctrl+shift+down=scroll_page_lines:1
+keybind = ctrl+shift+up=scroll_page_lines:-1
 #keybind = shift+page_down=scroll_page_lines:15
 #keybind = shift+page_up=scroll_page_lines:-15
 #  full page
