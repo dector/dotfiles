@@ -4,6 +4,10 @@ let mapleader = " "
 " Reject vi compatibility, accept modernity
 set nocompatible
 
+" Add Wayland clipboard support -- BUG not working on Bazzite
+set clipmethod=wayland
+set clipboard=unnamedplus
+
 " TAB = 4 spaces
 set tabstop=4
 " Insert spaces when TAB pressed
@@ -45,11 +49,14 @@ nnoremap <leader>hh :noh<CR>
 " Toggle line numbers
 nmap <leader>hn :set rnu!<CR>
 
-" Copy selection to system clipboard
+" Copy selection to system clipboard -- BUG issues on Bazzite
 nmap <leader><leader>yy "+yy
+nmap <leader><leader>y "+y
 nmap <leader><leader>Y "+Y
 vmap <leader><leader>y "+y
 vmap <leader><leader>Y "+Y
+" ... this seems to work on Bazzite
+xnoremap <silent> <leader><leader>y :w !wl-copy<CR><CR>
 
 " Paste from system clipboard
 nmap <leader><leader>p "+p
@@ -86,3 +93,18 @@ nnoremap q <Nop>
 nmap <C-Enter> o<ESC>k
 nmap <S-Enter> O<ESC>j
 
+" Enable Wayland clipboard -- BUG not working on Bazzite
+"if executable('wl-copy') && executable('wl-paste')
+"  let g:clipboard = {
+"        \ 'name': 'wayland',
+"        \ 'copy': {
+"        \   '+': 'wl-copy',
+"        \   '*': 'wl-copy',
+"        \ },
+"        \ 'paste': {
+"        \   '+': 'wl-paste',
+"        \   '*': 'wl-paste',
+"        \ },
+"        \ 'cache_enabled': 0,
+"        \ }
+"endif
