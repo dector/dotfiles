@@ -1,6 +1,6 @@
-fish_add_path ~/.local/bin
+#fish_add_path ~/.local/bin
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 mise activate | source
 starship init fish | source
 atuin init --disable-up-arrow fish | source
