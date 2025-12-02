@@ -103,7 +103,8 @@ map g[ <Action>(GotoPreviousError)
 map ]d <Action>(GotoNextError)
 map [d <Action>(GotoPreviousError)
 " Go Format code
-map gf <Action>(ReformatCode)
+"map gf <Action>(ReformatCode)
+map <A-f> <Action>(ReformatCode)
 " Go Hover info
 map gh <Action>(ShowHoverInfo)
 " Go javadoc
@@ -116,9 +117,9 @@ map g; <Action>(JumpToLastChange)
 map g, <Action>(JumpToNextChange)
 
 " Go Format File
-map gFF <action>(ShowReformatFileDialog)
+map gfF <action>(ShowReformatFileDialog)
 " Go Format Imports (Optimize)
-map gFI <action>(OptimizeImports)
+map gfi <action>(OptimizeImports)
 
 " Jump prev/next method
 nmap [m <Action>(MethodUp)
