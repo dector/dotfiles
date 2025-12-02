@@ -40,8 +40,8 @@ keybind = ctrl+page_up=scroll_page_up
 
 # Tabs `t`
 keybind = ctrl+q>t>n=new_tab
-keybind = ctrl+q>t>l=next_tab
-keybind = ctrl+q>t>h=previous_tab
+keybind = ctrl+q>ctrl+t>l=next_tab
+keybind = ctrl+q>ctrl+t>h=previous_tab
 keybind = ctrl+q>t>w=close_tab
 
 # Splits `s`
