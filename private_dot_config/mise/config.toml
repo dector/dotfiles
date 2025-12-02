@@ -1,6 +1,6 @@
 [tools]
 bun = "latest"
-java = "latest"
+java = "21"
 "ubi:block/goose" = "latest"
 atuin = "latest"
 zig = "latest"
@@ -38,3 +38,8 @@ pnpm = "latest"
 "ubi:emprcl/runal" = "latest"
 hk = "latest"
 gemini = "latest"
+"pipx:httpie" = "latest"
+"ubi:nushell/nushell" = { version = "latest", exe = "nu" }
+sentry = "latest"
+rust = "latest"
+ninja = "latest"
