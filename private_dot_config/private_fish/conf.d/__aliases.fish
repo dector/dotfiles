@@ -8,7 +8,8 @@ alias rm-hard /usr/bin/rm
 # Development
 alias nv nvim
 alias v nvim
-alias r task
+#alias r task
+alias r ror
 alias lg lazygit
 alias g git
 alias gs 'git status'
