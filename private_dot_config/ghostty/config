@@ -1,4 +1,7 @@
 #theme = Catppuccin Frappe
+#theme = Arthur
+#theme = Horizon
+theme = Atom One Dark
 
 command = /usr/sbin/fish
 
@@ -6,11 +9,12 @@ command = /usr/sbin/fish
 window-decoration = false
 gtk-titlebar = false
 
-window-width = 115
-window-height = 35
+#window-width = 115
+#window-height = 35
 
 # Terminal UI
-font-family = "Monaspace Argon"
+#font-family = "Monaspace Argon"
+font-size = 11
 cursor-style = block
 cursor-style-blink = false
 #shell-integration-features = no-cursor
