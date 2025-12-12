@@ -12,4 +12,6 @@ email = "dector@dector.space"
 
 [aliases]
 clone = ["git", "clone"]
+g = ["git"]
+push = ["git", "push"]
 
