@@ -1,45 +1,69 @@
 [tools]
 bun = "latest"
-java = "21"
-"ubi:block/goose" = "latest"
 atuin = "latest"
-zig = "latest"
-"ubi:tailwindlabs/tailwindcss" = "latest"
-deno = "latest"
 starship = "latest"
-uv = "latest"
-"ubi:leoafarias/fvm" = "latest"
-node = "latest"
 jj = "latest"
-zellij = "latest"
 lazygit = "latest"
 "ubi:idursun/jjui" = "latest"
 "ubi:dector/bang" = "latest"
 "ubi:dector/serv" = "latest"
 bat = "latest"
 "ubi:dector/lampa" = "latest"
-"ubi:afnanenayet/diffsitter" = "latest"
-claude = "latest"
-"npm:@github/copilot" = "latest"
 chezmoi = "latest"
 task = "latest"
 "ubi:umlx5h/gtrash" = "latest"
-glow = "latest"
 go = "latest"
-"ubi:abenz1267/walker" = "latest"
+"ubi:j178/prek" = "latest"
+usage = "latest"
+claude = { version = "latest", bin = "claude", platforms = """
+[linux-arm64]
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/linux-arm64/claude"
+
+[linux-x64]
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/linux-x64/claude"
+
+[macos-arm64]
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/darwin-arm64/claude"
+
+[macos-x64]
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/darwin-x64/claude"
+""", version_list_url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/stable" }
+fzf = "latest"
+zig = "latest"
+cmake = "latest"
+rust = "latest"
+just = "latest"
+duf = "latest"
+"go:github.com/oligot/go-mod-upgrade" = "latest"
+glow = "latest"
+choose = "latest"
+golangci-lint = "latest"
+jq = "latest"
+"ubi:block/goose" = "latest"
+uv = "latest"
 yazi = "latest"
 "ubi:tinygo-org/tinygo" = "latest"
-"ubi:kainctl/isd" = "latest"
-"ubi:fujiapple852/trippy" = { version = "latest", exe = "trip" }
-"npm:vite" = "latest"
-pnpm = "latest"
 "ubi:neovim/neovim" = { version = "latest", exe = "nvim" }
-"ubi:golangci/golangci-lint" = "latest"
-"ubi:emprcl/runal" = "latest"
-hk = "latest"
-gemini = "latest"
-"pipx:httpie" = "latest"
-"ubi:nushell/nushell" = { version = "latest", exe = "nu" }
-sentry = "latest"
-rust = "latest"
-ninja = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["java"]
+experimental = true
+
+#"ubi:abenz1267/walker" = "latest"
+#"ubi:kainctl/isd" = "latest"
+#"ubi:fujiapple852/trippy" = { version = "latest", exe = "trip" }
+#"npm:vite" = "latest"
+#pnpm = "latest"
+#"ubi:golangci/golangci-lint" = "latest"
+#"ubi:emprcl/runal" = "latest"
+#hk = "latest"
+#gemini = "latest"
+#"pipx:httpie" = "latest"
+#"ubi:nushell/nushell" = { version = "latest", exe = "nu" }
+#sentry = "latest"
+#rust = "latest"
+#"ubi:tailwindlabs/tailwindcss" = "latest"
+#zellij = "latest"
+#"ubi:afnanenayet/diffsitter" = "latest"
+#"npm:@github/copilot" = "latest"
+
