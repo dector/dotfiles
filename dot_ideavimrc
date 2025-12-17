@@ -196,6 +196,11 @@ inoremap <C-k> <Action>(PopupMenu-selectPrev)
 "map <S-<Tab>> <Action>(Switcher)
 map <leader>gg <Action>(Switcher)
 
+map <leader>gt <Action>(GotoTest)
+
+" Tasks & Context
+map <leader>gT <Action>(tasks.and.contexts)
+
 " ----- END Switcher -----
 
 
