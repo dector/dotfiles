@@ -3,116 +3,47 @@
         modifiers: [
             Super,
             Ctrl,
-        ],
-        key: "x",
-    ): SwapWindow,
-    (
-        modifiers: [
-            Super,
             Shift,
         ],
-        key: "semicolon",
-    ): System(Launcher),
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "c",
-    ): System(Screenshot),
-    (
-        modifiers: [
-            Super,
-            Shift,
-        ],
-        key: "Up",
+        key: "Right",
     ): Disable,
     (
         modifiers: [
             Super,
         ],
-        key: "y",
     ): Disable,
     (
         modifiers: [
             Super,
-            Shift,
-        ],
-        key: "Left",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "v",
-    ): ToggleOrientation,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
         ],
         key: "k",
-    ): Disable,
+    ): Focus(Up),
     (
         modifiers: [
             Super,
         ],
-        key: "s",
-    ): Disable,
+        key: "backslash",
+    ): System(MuteMic),
     (
         modifiers: [
-            Super,
             Alt,
-            Shift,
         ],
-        key: "Right",
+        key: "Tab",
     ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "Right",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Shift,
-        ],
-        key: "k",
-    ): Move(Up),
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "d",
-    ): Maximize,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "a",
-    ): System(WorkspaceOverview),
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "period",
-    ): Minimize,
     (
         modifiers: [
             Super,
             Ctrl,
-            Shift,
         ],
-        key: "k",
+        key: "Right",
     ): Disable,
     (
         modifiers: [
             Super,
+            Shift,
         ],
-        key: "F11",
-    ): Disable,
+        key: "o",
+    ): System(WindowSwitcherPrevious),
     (
         modifiers: [
             Super,
@@ -123,22 +54,58 @@
     (
         modifiers: [
             Super,
+        ],
+        key: "Up",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
             Shift,
         ],
-        key: "u",
-    ): System(WorkspaceOverview),
+        key: "j",
+    ): Disable,
     (
         modifiers: [
             Super,
         ],
-        key: "l",
-    ): Focus(Right),
+        key: "q",
+    ): Minimize,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "h",
+    ): Move(Left),
     (
         modifiers: [
             Super,
         ],
-        key: "comma",
-    ): System(Launcher),
+        key: "w",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "f",
+    ): ToggleWindowFloating,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "Escape",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Alt,
+            Shift,
+        ],
+        key: "Up",
+    ): Disable,
     (
         modifiers: [
             Super,
@@ -157,7 +124,21 @@
         modifiers: [
             Super,
             Ctrl,
+        ],
+        key: "v",
+    ): ToggleOrientation,
+    (
+        modifiers: [
+            Super,
+            Alt,
             Shift,
+        ],
+        key: "Down",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
         ],
         key: "Up",
     ): Disable,
@@ -165,14 +146,68 @@
         modifiers: [
             Super,
         ],
-        key: "Left",
+        key: "Down",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "Right",
     ): Disable,
     (
         modifiers: [
             Super,
             Ctrl,
+            Shift,
         ],
-        key: "Down",
+        key: "k",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "g",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "Left",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "Right",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "g",
+    ): System(LockScreen),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "y",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Alt,
+            Shift,
+        ],
+        key: "Right",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "Escape",
     ): Disable,
     (
         modifiers: [
@@ -185,47 +220,14 @@
         modifiers: [
             Super,
         ],
-        key: "backslash",
-    ): System(MuteMic),
-    (
-        modifiers: [
-            Super,
-        ],
+        key: "F11",
     ): Disable,
     (
         modifiers: [
             Super,
         ],
-        key: "slash",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "j",
-    ): Focus(Down),
-    (
-        modifiers: [
-            Super,
-            Shift,
-        ],
-        key: "h",
-    ): Move(Left),
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "Left",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Alt,
-            Shift,
-        ],
-        key: "k",
-    ): Disable,
+        key: "comma",
+    ): System(Launcher),
     (
         modifiers: [
             Super,
@@ -235,16 +237,21 @@
     (
         modifiers: [
             Super,
-            Ctrl,
             Shift,
         ],
-        key: "Down",
+        key: "c",
+        description: Some("Flameshot"),
+    ): Spawn("flameshot gui"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "b",
     ): Disable,
     (
         modifiers: [
             Super,
-            Alt,
-            Shift,
+            Ctrl,
         ],
         key: "Left",
     ): Disable,
@@ -259,28 +266,38 @@
     (
         modifiers: [
             Super,
-            Ctrl,
         ],
-        key: "f",
-    ): ToggleWindowFloating,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "Escape",
+        key: "m",
     ): Disable,
     (
         modifiers: [
             Super,
             Shift,
         ],
-        key: "a",
-    ): System(AppLibrary),
+        key: "u",
+    ): System(WorkspaceOverview),
+    (
+        modifiers: [
+            Alt,
+            Shift,
+        ],
+        key: "Tab",
+    ): Disable,
     (
         modifiers: [
             Super,
+            Alt,
+            Shift,
         ],
-        key: "m",
+        key: "h",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Alt,
+            Shift,
+        ],
+        key: "l",
     ): Disable,
     (
         modifiers: [
@@ -292,178 +309,24 @@
     (
         modifiers: [
             Super,
-            Ctrl,
+            Shift,
         ],
-        key: "h",
-    ): PreviousWorkspace,
+        key: "semicolon",
+    ): System(Launcher),
     (
         modifiers: [
             Super,
             Ctrl,
+        ],
+        key: "x",
+    ): SwapWindow,
+    (
+        modifiers: [
+            Super,
+            Alt,
             Shift,
         ],
         key: "Left",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "h",
-    ): Focus(Left),
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "j",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "g",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Alt,
-            Shift,
-        ],
-        key: "Up",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Alt,
-            Shift,
-        ],
-        key: "l",
-    ): Disable,
-    (
-        modifiers: [
-            Alt,
-            Shift,
-        ],
-        key: "Tab",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "Right",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "w",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "Up",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "Up",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-            Shift,
-        ],
-        key: "j",
-    ): Disable,
-    (
-        modifiers: [
-            Alt,
-        ],
-        key: "Tab",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-            Shift,
-        ],
-        key: "Right",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "l",
-    ): NextWorkspace,
-    (
-        modifiers: [
-            Super,
-            Alt,
-            Shift,
-        ],
-        key: "Down",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "Down",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "x",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "b",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Ctrl,
-        ],
-        key: "s",
-    ): ToggleStacking,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "Tab",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "f",
-    ): Fullscreen,
-    (
-        modifiers: [
-            Super,
-        ],
-        key: "q",
-    ): Minimize,
-    (
-        modifiers: [
-            Super,
-            Shift,
-        ],
-        key: "o",
-    ): System(WindowSwitcherPrevious),
-    (
-        modifiers: [
-            Shift,
-        ],
-        key: "4",
     ): Disable,
     (
         modifiers: [
@@ -476,6 +339,64 @@
     (
         modifiers: [
             Super,
+        ],
+        key: "l",
+    ): Focus(Right),
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "s",
+    ): ToggleStacking,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "d",
+    ): Maximize,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "f",
+    ): Fullscreen,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "period",
+    ): Minimize,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "s",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "Left",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "j",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "k",
+    ): Move(Up),
+    (
+        modifiers: [
+            Super,
+            Ctrl,
             Shift,
         ],
         key: "Down",
@@ -483,36 +404,123 @@
     (
         modifiers: [
             Super,
+            Ctrl,
+        ],
+        key: "k",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "Tab",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
             Shift,
         ],
-        key: "Escape",
+        key: "Down",
     ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+            Shift,
+        ],
+        key: "Up",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "x",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "l",
+    ): NextWorkspace,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "j",
+    ): Focus(Down),
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "Down",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "slash",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "h",
+    ): PreviousWorkspace,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "a",
+    ): System(AppLibrary),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "h",
+    ): Focus(Left),
     (
         modifiers: [
             Super,
             Alt,
             Shift,
         ],
-        key: "h",
-    ): Disable,
-    (
-        modifiers: [
-            Super,
-            Shift,
-        ],
-        key: "g",
-    ): System(LockScreen),
-    (
-        modifiers: [
-            Super,
-        ],
         key: "k",
-    ): Focus(Up),
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "a",
+    ): System(WorkspaceOverview),
     (
         modifiers: [
             Super,
             Shift,
         ],
-        key: "Right",
+        key: "Up",
     ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+            Shift,
+        ],
+        key: "Left",
+    ): Disable,
+    (
+        modifiers: [
+            Shift,
+        ],
+        key: "4",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "c",
+    ): System(Screenshot),
 }
