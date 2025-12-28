@@ -397,7 +397,8 @@ map <leader>aS <Action>(Android.SyncProject)
 map <leader>abb <Action>(BuildMenu)
 map <leader>abp <Action>(MakeGradleProject)
 map <leader>abP <Action>(MakeGradleProjectWithTests)
-map <leader>abm <Action>(AssembleGradleModule)
+"map <leader>abm <Action>(AssembleGradleModule)
+map <leader>abm <Action>(AssembleRunConfiguration)
 map <leader>ab! <Action>(RebuildGradleProject)
 
 " ----- END Actions -----
