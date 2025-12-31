@@ -44,6 +44,7 @@ uv = "latest"
 yazi = "latest"
 "ubi:tinygo-org/tinygo" = "latest"
 "ubi:neovim/neovim" = { version = "latest", exe = "nvim" }
+java = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
