@@ -45,6 +45,9 @@ yazi = "latest"
 "ubi:tinygo-org/tinygo" = "latest"
 "ubi:neovim/neovim" = { version = "latest", exe = "nvim" }
 java = "latest"
+node = "latest"
+gemini = "latest"
+tokei = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
