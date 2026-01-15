@@ -1,5 +1,7 @@
 #fish_add_path ~/.local/bin
 
+set EDITOR vim
+
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 mise activate | source
 starship init fish | source
