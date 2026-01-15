@@ -43,10 +43,10 @@ keybind = ctrl+page_down=scroll_page_down
 keybind = ctrl+page_up=scroll_page_up
 
 # Tabs `t`
-keybind = ctrl+q>t>n=new_tab
+keybind = ctrl+q>ctrl+t>n=new_tab
 keybind = ctrl+q>ctrl+t>l=next_tab
 keybind = ctrl+q>ctrl+t>h=previous_tab
-keybind = ctrl+q>t>w=close_tab
+keybind = ctrl+q>ctrl+t>x=close_tab
 
 # Splits `s`
 keybind = ctrl+q>ctrl+w>left=new_split:left
