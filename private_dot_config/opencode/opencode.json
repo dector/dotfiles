@@ -30,6 +30,10 @@
       "git ls-files *": "allow",
       "go test *": "allow",
       "go vet *": "allow",
+      "gofmt *": "allow",
+      "bun test": "allow",
+      "bun test *": "allow",
+      "wc *": "allow",
       "pwd": "allow"
     },
     "glob": "allow",
