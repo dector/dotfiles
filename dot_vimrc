@@ -30,7 +30,7 @@ set ttimeoutlen=2
 
 " Show visual limiters on 72,100,120 symbols
 set colorcolumn=72,100,120
-highlight ColorColumn ctermbg=lightgrey
+highlight ColorColumn ctermbg=236 guibg=#303030
 
 " Search: respect case only if it has uppercase letter
 set ignorecase 
