@@ -1,6 +1,16 @@
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl a" { SwitchToMode "normal"; }
+        bind "Alt h" { MoveFocus "left"; }
+        bind "Alt j" { MoveFocus "down"; }
+        bind "Alt k" { MoveFocus "up"; }
+        bind "Alt l" { MoveFocus "right"; }
+        bind "Alt Shift h" { NewPane "left"; }
+        bind "Alt Shift j" { NewPane "down"; }
+        bind "Alt Shift k" { NewPane "up"; }
+        bind "Alt Shift l" { NewPane "right"; }
+        bind "Ctrl Alt h" { GoToPreviousTab; }
+        bind "Ctrl Alt l" { GoToNextTab; }
     }
     pane {
         bind "left" { MoveFocus "left"; }
