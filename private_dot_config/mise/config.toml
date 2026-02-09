@@ -48,6 +48,9 @@ java = "latest"
 node = "latest"
 gemini = "latest"
 tokei = "latest"
+pandoc = "latest"
+opencode = "latest"
+codex = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
