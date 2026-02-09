@@ -28,6 +28,9 @@ Plug 'tpope/vim-commentary'
 " Should finish vim combination in 1sec
 set timeoutlen=1000
 
+" Show line numbers
+set nornu
+
 " ----- END PLUGINS -----
 
 
