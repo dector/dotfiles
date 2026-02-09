@@ -177,7 +177,7 @@ keybinds clear-defaults=true {
         bind "Alt Shift k" { NewPane "up"; }
         bind "Alt Shift l" { NewPane "right"; }
         bind "Alt n" { NewPane; }
-        bind "Alt Shift n" { NewTab; }
+        bind "Ctrl Alt n" { NewTab; }
         bind "Alt o" { MoveTab "right"; }
         bind "Alt p" { TogglePaneInGroup; }
         bind "Alt Shift p" { ToggleGroupMarking; }
