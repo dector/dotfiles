@@ -51,6 +51,8 @@ tokei = "latest"
 pandoc = "latest"
 opencode = "latest"
 codex = "latest"
+ttyd = "latest"
+"npm:@marp-team/marp-cli" = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
