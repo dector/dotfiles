@@ -49,8 +49,8 @@ keybind = ctrl+q>ctrl+t>h=previous_tab
 keybind = ctrl+&=new_tab
 keybind = ctrl+shift+bracket_right=next_tab
 keybind = ctrl+shift+bracket_left=previous_tab
-keybind = ctrl+alt+shift+bracket_left=move_tab:-1
-keybind = ctrl+alt+shift+bracket_right=move_tab:1
+keybind = ctrl+shift+bracket_left=move_tab:-1
+keybind = ctrl+shift+bracket_right=move_tab:1
 keybind = ctrl+q>ctrl+t>x=close_tab
 
 # Splits `s`
