@@ -287,7 +287,7 @@ themes {
         fg 196 203 212
         bg 26 30 36
         red 191 97 106
-        green 129 161 193
+        green 146 189 132
         yellow 208 176 132
         blue 129 161 193
         magenta 180 142 173
@@ -538,7 +538,7 @@ default_mode "locked"
  
 // Whether to enable mouse hover effects and pane grouping functionality
 // default is true
-// advanced_mouse_actions false
+advanced_mouse_actions false
  
 // The ip address the web server should listen on when it starts
 // Default: "127.0.0.1"
