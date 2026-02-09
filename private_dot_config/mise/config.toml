@@ -54,6 +54,8 @@ codex = "latest"
 ttyd = "latest"
 "npm:@marp-team/marp-cli" = "latest"
 "npm:@mariozechner/pi-coding-agent" = "latest"
+rg = "latest"
+"ubi:philschmid/mcp-cli" = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
