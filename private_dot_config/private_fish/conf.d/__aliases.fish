@@ -1,5 +1,7 @@
 alias :q exit
 
+alias ts tailscale
+
 # Remove to trash
 alias rm trash
 #alias rm 'gtrash put'
@@ -32,7 +34,7 @@ alias mdp 'glow -p'
 alias back 'cd -'
 
 # Clipboard
-alias clp 'xclip -sel c'
+alias clp 'wl-copy'
 
 # Always ignore case for grep
 alias grep 'grep -i'
