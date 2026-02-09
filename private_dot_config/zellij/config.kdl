@@ -5,10 +5,12 @@ keybinds clear-defaults=true {
         bind "Alt j" { MoveFocus "down"; }
         bind "Alt k" { MoveFocus "up"; }
         bind "Alt l" { MoveFocus "right"; }
-        bind "Alt Shift h" { NewPane "left"; }
-        bind "Alt Shift j" { NewPane "down"; }
-        bind "Alt Shift k" { NewPane "up"; }
-        bind "Alt Shift l" { NewPane "right"; }
+        bind "Alt Shift h" { MovePane "left"; }
+        bind "Alt Shift j" { MovePane "down"; }
+        bind "Alt Shift k" { MovePane "up"; }
+        bind "Alt Shift l" { MovePane "right"; }
+        bind "Alt n" { NewPane; }
+        bind "Alt Shift n" { NewTab; }
         bind "Ctrl Alt h" { GoToPreviousTab; }
         bind "Ctrl Alt l" { GoToNextTab; }
         bind "Ctrl Alt j" { HalfPageScrollDown; }
@@ -170,11 +172,12 @@ keybinds clear-defaults=true {
         bind "Alt j" { MoveFocus "down"; }
         bind "Alt k" { MoveFocus "up"; }
         bind "Alt l" { MoveFocusOrTab "right"; }
-        bind "Alt Shift h" { MovePane "left"; }
-        bind "Alt Shift j" { MovePane "down"; }
-        bind "Alt Shift k" { MovePane "up"; }
-        bind "Alt Shift l" { MovePane "right"; }
+        bind "Alt Shift h" { NewPane "left"; }
+        bind "Alt Shift j" { NewPane "down"; }
+        bind "Alt Shift k" { NewPane "up"; }
+        bind "Alt Shift l" { NewPane "right"; }
         bind "Alt n" { NewPane; }
+        bind "Alt Shift n" { NewTab; }
         bind "Alt o" { MoveTab "right"; }
         bind "Alt p" { TogglePaneInGroup; }
         bind "Alt Shift p" { ToggleGroupMarking; }
