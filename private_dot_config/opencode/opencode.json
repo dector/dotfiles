@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "keybinds": {
+    "messages_half_page_up": "pageup",
+    "messages_half_page_down": "pagedown",
+    "messages_page_up": "ctrl+pageup",
+    "messages_page_down": "ctrl+pagedown"
+  },
+  "permission": {
+    "read": "allow",
+    "write": "ask",
+    "edit": "ask",
+    "bash": {
+      "*": "ask",
+      "ls": "allow",
+      "ls *": "allow",
+      "pwd": "allow",
+      "git status": "allow",
+      "git status *": "allow",
+      "git diff": "allow",
+      "git diff *": "allow",
+      "git log": "allow",
+      "git log *": "allow",
+      "git show": "allow",
+      "git show *": "allow",
+      "git branch": "allow",
+      "git branch *": "allow",
+      "git rev-parse": "allow",
+      "git rev-parse *": "allow",
+      "git ls-files": "allow",
+      "git ls-files *": "allow"
+    },
+    "glob": "allow",
+    "grep": "allow",
+    "task": "allow",
+    "webfetch": "allow",
+    "question": "allow",
+    "todowrite": "allow"
+  },
+  "mcp": {
+  }
+}
