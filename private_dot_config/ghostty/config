@@ -46,6 +46,9 @@ keybind = ctrl+page_up=scroll_page_up
 keybind = ctrl+q>ctrl+t>n=new_tab
 keybind = ctrl+q>ctrl+t>l=next_tab
 keybind = ctrl+q>ctrl+t>h=previous_tab
+keybind = ctrl+&=new_tab
+keybind = ctrl+shift+bracket_right=next_tab
+keybind = ctrl+shift+bracket_left=previous_tab
 keybind = ctrl+q>ctrl+t>x=close_tab
 
 # Splits `s`
