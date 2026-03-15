@@ -14,8 +14,40 @@ keybinds clear-defaults=true {
         bind "Ctrl Alt n" { NewTab; }
         bind "Ctrl Alt h" { GoToPreviousTab; }
         bind "Ctrl Alt l" { GoToNextTab; }
-        bind "Ctrl Alt j" { HalfPageScrollDown; }
-        bind "Ctrl Alt k" { HalfPageScrollUp; }
+        bind "Ctrl Alt j" {
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+            ScrollDown;
+        }
+        bind "Ctrl Alt k" {
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+            ScrollUp;
+        }
         bind "Alt o" {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
