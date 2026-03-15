@@ -11,6 +11,7 @@ keybinds clear-defaults=true {
         bind "Alt Shift l" { MovePane "right"; }
         bind "Alt n" { NewPane; }
         bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt Shift f" { ToggleFloatingPanes; }
         bind "Ctrl Alt n" { NewTab; }
         bind "Ctrl Alt h" { GoToPreviousTab; }
         bind "Ctrl Alt l" { GoToNextTab; }
@@ -378,7 +379,7 @@ default_mode "locked"
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 // 
-// default_shell "fish"
+default_shell "fish"
  
 // Choose the path to override cwd that zellij will use for opening new panes
 // 
@@ -421,7 +422,7 @@ default_mode "locked"
 // (Requires restart)
 // Default: false
 // 
-// mirror_session true
+mirror_session true
  
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
