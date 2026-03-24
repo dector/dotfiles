@@ -56,6 +56,8 @@ ttyd = "latest"
 "npm:@mariozechner/pi-coding-agent" = "latest"
 rg = "latest"
 "ubi:philschmid/mcp-cli" = "latest"
+"github:badlogic/pi-mono" = "latest"
+pnpm = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
