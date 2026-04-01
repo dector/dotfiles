@@ -1,0 +1,14 @@
+layout {
+  tab name="agentic" {
+    pane size=1 borderless=true {
+      plugin location="zellij:compact-bar"
+    }
+    pane split_direction="vertical" {
+      pane command="av" size="70%" focus=true
+      pane command="pim" size="30%"
+    }
+    pane size=1 borderless=true {
+      plugin location="zellij:status-bar"
+    }
+  }
+}
