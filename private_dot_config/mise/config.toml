@@ -30,7 +30,7 @@ jq = "latest"
 uv = "latest"
 yazi = "latest"
 "ubi:tinygo-org/tinygo" = "latest"
-"ubi:neovim/neovim" = { version = "latest", exe = "nvim" }
+neovim = "stable"
 java = "latest"
 node = "latest"
 gemini = "latest"
@@ -45,6 +45,7 @@ rg = "latest"
 pnpm = "latest"
 pi = "latest"
 lua = "latest"
+tree-sitter = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
