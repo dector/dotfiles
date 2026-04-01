@@ -15,13 +15,13 @@ keybinds clear-defaults=true {
         bind "Alt ]" { GoToNextTab; }
         bind "Alt n" { NewPane; }
         bind "Alt Shift n" { NewTab; }
-        bind "Alt f" {
+        bind "Alt Shift f" {
             ToggleFocusFullscreen;
             TogglePaneFrames;
         }
         bind "Alt r" { SwitchToMode "renamepane"; PaneNameInput 0; }
         bind "Alt s" { SwitchToMode "scroll"; }
-        bind "Alt Shift f" { ToggleFloatingPanes; }
+        bind "Alt f" { ToggleFloatingPanes; }
         bind "Ctrl Alt r" { SwitchToMode "renametab"; TabNameInput 0; }
         bind "Ctrl Alt n" { NewTab; }
         bind "Ctrl Alt h" { GoToPreviousTab; }
@@ -223,7 +223,7 @@ keybinds clear-defaults=true {
         bind "Alt =" { Resize "Increase"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
-        bind "Alt f" { ToggleFloatingPanes; }
+        bind "Alt Shift f" { ToggleFloatingPanes; }
         bind "Ctrl a" { SwitchToMode "locked"; }
         bind "Alt h" { MoveFocusOrTab "left"; }
         bind "Alt i" { MoveTab "left"; }
