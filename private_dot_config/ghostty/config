@@ -56,6 +56,7 @@ keybind = ctrl+alt+h=previous_tab
 keybind = ctrl+alt+l=next_tab
 keybind = ctrl+shift+9=move_tab:-1
 keybind = ctrl+shift+0=move_tab:1
+keybind = ctrl+shift+r=prompt_tab_title
 keybind = ctrl+q>ctrl+t>x=close_tab
 
 # Splits `s`
