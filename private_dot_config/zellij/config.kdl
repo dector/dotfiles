@@ -11,14 +11,18 @@ keybinds clear-defaults=true {
         bind "Alt Shift l" { MovePane "right"; }
         bind "Alt (" { MoveTab "left"; }
         bind "Alt )" { MoveTab "right"; }
+        bind "Alt [" { GoToPreviousTab; }
+        bind "Alt ]" { GoToNextTab; }
         bind "Alt n" { NewPane; }
         bind "Alt Shift n" { NewTab; }
-        bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt f" {
+            ToggleFocusFullscreen;
+            TogglePaneFrames;
+        }
         bind "Alt r" { SwitchToMode "renamepane"; PaneNameInput 0; }
         bind "Alt s" { SwitchToMode "scroll"; }
         bind "Alt Shift f" { ToggleFloatingPanes; }
         bind "Ctrl Alt r" { SwitchToMode "renametab"; TabNameInput 0; }
-        bind "Alt ]" { NextSwapLayout; }
         bind "Ctrl Alt n" { NewTab; }
         bind "Ctrl Alt h" { GoToPreviousTab; }
         bind "Ctrl Alt l" { GoToNextTab; }
@@ -351,7 +355,7 @@ themes {
         fg 196 203 212
         bg 26 30 36
         red 191 97 106
-        green 146 189 132
+        green 245 158 11
         yellow 208 176 132
         blue 129 161 193
         magenta 180 142 173
@@ -391,7 +395,7 @@ default_mode "locked"
 // The name of the default layout to load on startup
 // Default: "default"
 // 
-// default_layout "compact"
+default_layout "default"
  
 // The folder in which Zellij will look for layouts
 // (Requires restart)
