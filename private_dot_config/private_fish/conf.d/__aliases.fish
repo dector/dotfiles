@@ -9,7 +9,8 @@ alias rm-hard /usr/bin/rm
 
 # Development
 alias nv nvim
-alias v nvim
+alias v "NVIM_APPNAME=nvchad nvim"
+alias av "NVIM_APPNAME=astronvim nvim"
 #alias r task
 alias r ror
 alias lg lazygit
