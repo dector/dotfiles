@@ -77,9 +77,13 @@ keybind = ctrl+q>ctrl+w>k=goto_split:up
 # Clipboard
 keybind = ctrl+q>y=copy_to_clipboard
 keybind = ctrl+q>p=paste_from_clipboard
+
 keybind = shift+enter=text:\n
+
 # UI / tools
 keybind = ctrl+enter=unbind
+keybind = ctrl+,=unbind
+keybind = ctrl+shift+,=toggle_command_palette
 keybind = ctrl+q>,=toggle_command_palette
 keybind = ctrl+q>f=start_search
 keybind = ctrl+q>a=select_all
