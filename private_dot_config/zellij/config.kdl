@@ -1,17 +1,24 @@
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl a" { SwitchToMode "normal"; }
-        bind "Alt h" { MoveFocus "left"; }
+        bind "Alt h" { MoveFocusOrTab "left"; }
         bind "Alt j" { MoveFocus "down"; }
         bind "Alt k" { MoveFocus "up"; }
-        bind "Alt l" { MoveFocus "right"; }
+        bind "Alt l" { MoveFocusOrTab "right"; }
         bind "Alt Shift h" { MovePane "left"; }
         bind "Alt Shift j" { MovePane "down"; }
         bind "Alt Shift k" { MovePane "up"; }
         bind "Alt Shift l" { MovePane "right"; }
+        bind "Alt (" { MoveTab "left"; }
+        bind "Alt )" { MoveTab "right"; }
         bind "Alt n" { NewPane; }
+        bind "Alt Shift n" { NewTab; }
         bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt r" { SwitchToMode "renamepane"; PaneNameInput 0; }
+        bind "Alt s" { SwitchToMode "scroll"; }
         bind "Alt Shift f" { ToggleFloatingPanes; }
+        bind "Ctrl Alt r" { SwitchToMode "renametab"; TabNameInput 0; }
+        bind "Alt ]" { NextSwapLayout; }
         bind "Ctrl Alt n" { NewTab; }
         bind "Ctrl Alt h" { GoToPreviousTab; }
         bind "Ctrl Alt l" { GoToNextTab; }
@@ -26,18 +33,8 @@ keybinds clear-defaults=true {
             ScrollDown;
             ScrollDown;
             ScrollDown;
-            ScrollDown;
-            ScrollDown;
-            ScrollDown;
-            ScrollDown;
-            ScrollDown;
         }
         bind "Ctrl Alt k" {
-            ScrollUp;
-            ScrollUp;
-            ScrollUp;
-            ScrollUp;
-            ScrollUp;
             ScrollUp;
             ScrollUp;
             ScrollUp;
@@ -90,10 +87,10 @@ keybinds clear-defaults=true {
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
     }
     tab {
-        bind "left" { GoToPreviousTab; }
+        bind "left" { MoveTab "left"; }
         bind "down" { GoToNextTab; }
         bind "up" { GoToPreviousTab; }
-        bind "right" { GoToNextTab; }
+        bind "right" { MoveTab "right"; }
         bind "1" { GoToTab 1; SwitchToMode "normal"; }
         bind "2" { GoToTab 2; SwitchToMode "normal"; }
         bind "3" { GoToTab 3; SwitchToMode "normal"; }
@@ -106,10 +103,10 @@ keybinds clear-defaults=true {
         bind "[" { BreakPaneLeft; SwitchToMode "normal"; }
         bind "]" { BreakPaneRight; SwitchToMode "normal"; }
         bind "b" { BreakPane; SwitchToMode "normal"; }
-        bind "h" { GoToPreviousTab; }
+        bind "h" { MoveFocusOrTab "left"; }
         bind "j" { GoToNextTab; }
         bind "k" { GoToPreviousTab; }
-        bind "l" { GoToNextTab; }
+        bind "l" { MoveFocusOrTab "right"; }
         bind "n" { NewTab; SwitchToMode "normal"; }
         bind "r" { SwitchToMode "renametab"; TabNameInput 0; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "normal"; }
@@ -258,6 +255,7 @@ keybinds clear-defaults=true {
         bind "x" { CloseFocus; SwitchToMode "normal"; }
     }
     shared_among "scroll" "search" {
+        bind "Alt s" { SwitchToMode "locked"; }
         bind "PageDown" { PageScrollDown; }
         bind "PageUp" { PageScrollUp; }
         bind "left" { PageScrollUp; }
@@ -276,18 +274,23 @@ keybinds clear-defaults=true {
         bind "u" { HalfPageScrollUp; }
     }
     entersearch {
+        bind "Alt s" { SwitchToMode "locked"; }
         bind "Ctrl c" { SwitchToMode "scroll"; }
         bind "esc" { SwitchToMode "scroll"; }
         bind "enter" { SwitchToMode "search"; }
     }
     renametab {
-        bind "esc" { UndoRenameTab; SwitchToMode "tab"; }
+        bind "enter" { SwitchToMode "locked"; }
+        bind "Ctrl Alt r" { UndoRenameTab; SwitchToMode "locked"; }
+        bind "esc" { UndoRenameTab; SwitchToMode "locked"; }
     }
     shared_among "renametab" "renamepane" {
         bind "Ctrl c" { SwitchToMode "normal"; }
     }
     renamepane {
-        bind "esc" { UndoRenamePane; SwitchToMode "pane"; }
+        bind "enter" { SwitchToMode "locked"; }
+        bind "Alt r" { UndoRenamePane; SwitchToMode "locked"; }
+        bind "esc" { UndoRenamePane; SwitchToMode "locked"; }
     }
     shared_among "session" "tmux" {
         bind "d" { Detach; }
@@ -379,7 +382,7 @@ default_mode "locked"
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 // 
-default_shell "fish"
+// default_shell "fish"
  
 // Choose the path to override cwd that zellij will use for opening new panes
 // 
