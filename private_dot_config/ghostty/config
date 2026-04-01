@@ -17,6 +17,9 @@ gtk-titlebar = false
 font-size = 11
 cursor-style = block
 cursor-style-blink = false
+bell-features = audio,no-system,no-attention,no-title,no-border
+bell-audio-path = /usr/share/sounds/freedesktop/stereo/bell.oga
+bell-audio-volume = 1.0
 #shell-integration-features = no-cursor
 
 # Terminfo fix
