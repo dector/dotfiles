@@ -1,27 +1,44 @@
 keybinds clear-defaults=true {
     locked {
-        bind "Ctrl a" { SwitchToMode "normal"; }
+        bind "Alt ," { SwitchToMode "normal"; }
         bind "Alt h" { MoveFocusOrTab "left"; }
         bind "Alt j" { MoveFocus "down"; }
         bind "Alt k" { MoveFocus "up"; }
         bind "Alt l" { MoveFocusOrTab "right"; }
+
+        // Alt+arrows: move pane out of current group (stack) and reposition inside this tab
+        bind "Alt left" { TogglePaneInGroup; MovePane "left"; }
+        bind "Alt right" { TogglePaneInGroup; MovePane "right"; }
+        bind "Alt down" { TogglePaneInGroup; MovePane "down"; }
+        bind "Alt up" { TogglePaneInGroup; MovePane "up"; }
+
+        // Alt+Shift+arrows: break pane into a neighboring tab
+        bind "Alt Shift left" { BreakPaneLeft; }
+        bind "Alt Shift right" { BreakPaneRight; }
+        bind "Alt Shift down" { BreakPaneRight; }
+        bind "Alt Shift up" { BreakPaneLeft; }
+
         bind "Alt Shift h" { MovePane "left"; }
         bind "Alt Shift j" { MovePane "down"; }
         bind "Alt Shift k" { MovePane "up"; }
         bind "Alt Shift l" { MovePane "right"; }
+        bind "Alt Shift s" { ToggleGroupMarking; }
+        bind "Alt +" { Resize "Increase"; }
+        bind "Alt -" { Resize "Decrease"; }
+        bind "Alt =" { Resize "Increase"; }
         bind "Alt (" { MoveTab "left"; }
         bind "Alt )" { MoveTab "right"; }
         bind "Alt [" { GoToPreviousTab; }
         bind "Alt ]" { GoToNextTab; }
         bind "Alt n" { NewPane; }
         bind "Alt Shift n" { NewTab; }
-        bind "Alt Shift f" {
+        bind "Alt f" {
             ToggleFocusFullscreen;
             TogglePaneFrames;
         }
         bind "Alt r" { SwitchToMode "renamepane"; PaneNameInput 0; }
         bind "Alt s" { SwitchToMode "scroll"; }
-        bind "Alt f" { ToggleFloatingPanes; }
+        bind "Alt o" { ToggleFloatingPanes; }
         bind "Ctrl Alt r" { SwitchToMode "renametab"; TabNameInput 0; }
         bind "Ctrl Alt n" { NewTab; }
         bind "Ctrl Alt h" { GoToPreviousTab; }
@@ -38,6 +55,8 @@ keybinds clear-defaults=true {
             ScrollDown;
             ScrollDown;
         }
+        bind "Ctrl Alt m" { HalfPageScrollDown; }
+        bind "Ctrl Alt ," { HalfPageScrollUp; }
         bind "Ctrl Alt k" {
             ScrollUp;
             ScrollUp;
@@ -223,8 +242,8 @@ keybinds clear-defaults=true {
         bind "Alt =" { Resize "Increase"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
-        bind "Alt Shift f" { ToggleFloatingPanes; }
-        bind "Ctrl a" { SwitchToMode "locked"; }
+        bind "Alt o" { ToggleFloatingPanes; }
+        bind "Alt ," { SwitchToMode "locked"; }
         bind "Alt h" { MoveFocusOrTab "left"; }
         bind "Alt i" { MoveTab "left"; }
         bind "Alt j" { MoveFocus "down"; }
@@ -236,10 +255,10 @@ keybinds clear-defaults=true {
         bind "Alt Shift l" { NewPane "right"; }
         bind "Alt n" { NewPane; }
         bind "Ctrl Alt n" { NewTab; }
-        bind "Alt o" { MoveTab "right"; }
+        //bind "Alt o" { MoveTab "right"; }
         bind "Alt p" { TogglePaneInGroup; }
         bind "Alt Shift p" { ToggleGroupMarking; }
-        bind "Ctrl q" { Quit; }
+        bind "Alt Shift q" { Quit; }
     }
     shared_except "locked" "move" {
         bind "Ctrl h" { SwitchToMode "move"; }

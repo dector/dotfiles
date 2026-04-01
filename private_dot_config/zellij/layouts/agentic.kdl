@@ -4,9 +4,22 @@ layout {
       plugin location="zellij:compact-bar"
     }
     pane split_direction="vertical" {
-      pane command="av" size="70%" focus=true
-      pane command="pim" size="30%"
+      pane command="av" size="60%" focus=true
+      pane size="40%" stacked=true {
+        pane command="pi"
+        pane
+      }
     }
+    pane size=1 borderless=true {
+      plugin location="zellij:status-bar"
+    }
+  }
+
+  new_tab_template {
+    pane size=1 borderless=true {
+      plugin location="zellij:compact-bar"
+    }
+    pane
     pane size=1 borderless=true {
       plugin location="zellij:status-bar"
     }
