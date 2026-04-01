@@ -1,7 +1,7 @@
 [include]
     path = ./config.private
 [init]
-	defaultBranch = main
+    defaultBranch = trunk
 [merge]
     conflictstyle = diff3
 
