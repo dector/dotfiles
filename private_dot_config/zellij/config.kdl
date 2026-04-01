@@ -112,21 +112,39 @@ keybinds clear-defaults=true {
         bind "tab" { ToggleTab; }
     }
     resize {
+        // Fine resize (small step)
         bind "left" { Resize "Increase left"; }
         bind "down" { Resize "Increase down"; }
         bind "up" { Resize "Increase up"; }
         bind "right" { Resize "Increase right"; }
+
+        // Coarse resize (larger step)
+        bind "h" {
+            Resize "Increase left";
+            Resize "Increase left";
+        }
+        bind "j" {
+            Resize "Increase down";
+            Resize "Increase down";
+        }
+        bind "k" {
+            Resize "Increase up";
+            Resize "Increase up";
+        }
+        bind "l" {
+            Resize "Increase right";
+            Resize "Increase right";
+        }
+
+        // Decrease from opposite direction of h/j/k/l
+        bind "H" { Resize "Decrease right"; }
+        bind "J" { Resize "Decrease up"; }
+        bind "K" { Resize "Decrease down"; }
+        bind "L" { Resize "Decrease left"; }
+
         bind "+" { Resize "Increase"; }
         bind "-" { Resize "Decrease"; }
         bind "=" { Resize "Increase"; }
-        bind "H" { Resize "Decrease left"; }
-        bind "J" { Resize "Decrease down"; }
-        bind "K" { Resize "Decrease up"; }
-        bind "L" { Resize "Decrease right"; }
-        bind "h" { Resize "Increase left"; }
-        bind "j" { Resize "Increase down"; }
-        bind "k" { Resize "Increase up"; }
-        bind "l" { Resize "Increase right"; }
         bind "enter" { SwitchToMode "locked"; }
         bind "esc" { SwitchToMode "locked"; }
         bind "Ctrl r" { SwitchToMode "normal"; }
