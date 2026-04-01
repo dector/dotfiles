@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+exec env CC=gcc CXX=g++ NVIM_APPNAME=astronvim nvim "$@"
