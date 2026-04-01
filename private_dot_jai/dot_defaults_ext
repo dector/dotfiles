@@ -1,0 +1,2 @@
+mask .config/git
+mask .pi/agent/auth.json
