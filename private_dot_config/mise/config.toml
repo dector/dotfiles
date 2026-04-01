@@ -15,19 +15,6 @@ task = "latest"
 go = "latest"
 "ubi:j178/prek" = "latest"
 usage = "latest"
-claude = { version = "latest", bin = "claude", platforms = """
-[linux-arm64]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/linux-arm64/claude"
-
-[linux-x64]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/linux-x64/claude"
-
-[macos-arm64]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/darwin-arm64/claude"
-
-[macos-x64]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/{version}/darwin-x64/claude"
-""", version_list_url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/stable" }
 fzf = "latest"
 zig = "latest"
 cmake = "latest"
@@ -53,11 +40,11 @@ opencode = "latest"
 codex = "latest"
 ttyd = "latest"
 "npm:@marp-team/marp-cli" = "latest"
-"npm:@mariozechner/pi-coding-agent" = "latest"
 rg = "latest"
 "ubi:philschmid/mcp-cli" = "latest"
-"github:badlogic/pi-mono" = "latest"
 pnpm = "latest"
+pi = "latest"
+lua = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["java"]
